@@ -73,7 +73,7 @@ export function Search() {
                 >
                   {/* Sprite */}
                   <img
-                    src={getPokemonSpriteUrl(pokemon.id)}
+                    src={getPokemonSpriteUrl(pokemon)}
                     alt={pokemon.name}
                     className="w-16 h-16"
                     loading="lazy"

@@ -58,7 +58,7 @@ export function PokemonDetail() {
         <div className="bg-white rounded-2xl shadow-2xl p-6 mb-4">
           <div className="flex items-center gap-6">
             <img
-              src={getPokemonSpriteUrl(pokemon.id)}
+              src={getPokemonSpriteUrl(pokemon)}
               alt={pokemon.name}
               className="w-24 h-24 md:w-32 md:h-32"
             />
