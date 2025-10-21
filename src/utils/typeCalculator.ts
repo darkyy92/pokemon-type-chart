@@ -61,29 +61,9 @@ export function groupMatchupsByCategory(matchups: CalculatedMatchup[]) {
 
 /**
  * Get Pokemon sprite URL from PokeAPI
- * For regular Pokemon: uses ID
- * For Mega Evolutions: uses name-based URL
+ * All Pokemon (including Megas) use their ID directly
  */
 export function getPokemonSpriteUrl(pokemon: { id: number; name: string }): string {
-  // Check if it's a Mega Evolution
-  if (pokemon.name.startsWith('Mega ')) {
-    // Convert "Mega Gengar" → "gengar-mega"
-    // Convert "Mega Charizard X" → "charizard-mega-x"
-    const namePart = pokemon.name.replace('Mega ', '').toLowerCase();
-    const parts = namePart.split(' ');
-
-    if (parts.length === 1) {
-      // Simple mega: "Mega Gengar" → "gengar-mega"
-      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${parts[0]}-mega.png`;
-    } else {
-      // Form variant: "Mega Charizard X" → "charizard-mega-x"
-      const baseName = parts[0];
-      const form = parts[1].toLowerCase();
-      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${baseName}-mega-${form}.png`;
-    }
-  }
-
-  // Regular Pokemon: use ID
   return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
 }
 
