@@ -51,14 +51,14 @@ export function Search() {
         </div>
 
         {/* Search Box */}
-        <div className="bg-white rounded-2xl shadow-2xl p-2">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-2">
           <input
             ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search Pokemon..."
-            className="w-full px-6 py-4 text-2xl md:text-3xl font-semibold text-gray-800 bg-transparent border-none outline-none placeholder:text-gray-400"
+            className="w-full px-6 py-4 text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-100 bg-transparent border-none outline-none placeholder:text-gray-400 dark:placeholder:text-gray-500"
           />
 
           {/* Search Results */}
@@ -68,7 +68,7 @@ export function Search() {
                 <button
                   key={pokemon.id}
                   onClick={() => handleSelectPokemon(pokemon)}
-                  className="w-full flex items-center gap-4 p-4 hover:bg-gray-100 rounded-xl transition-colors text-left"
+                  className="w-full flex items-center gap-4 p-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl transition-colors text-left"
                 >
                   {/* Sprite */}
                   <img
@@ -80,7 +80,7 @@ export function Search() {
 
                   {/* Name and Types */}
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-800 mb-1">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-1">
                       {pokemon.name}
                     </h3>
                     <div className="flex gap-2">
@@ -92,7 +92,7 @@ export function Search() {
 
                   {/* Arrow */}
                   <svg
-                    className="w-6 h-6 text-gray-400"
+                    className="w-6 h-6 text-gray-400 dark:text-gray-500"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -111,7 +111,7 @@ export function Search() {
         </div>
 
         {/* Hint Text */}
-        <p className="text-center text-white/60 mt-6">
+        <p className="text-center text-white/60 dark:text-white/50 mt-6">
           Type a Pokemon name to see its weaknesses and counters
         </p>
       </div>
