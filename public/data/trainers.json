@@ -8,17 +8,17 @@
     "battle_order": 1,
     "party": [
       {
-        "level": 9,
+        "level": 8,
         "form": null,
         "isMega": false,
         "heldItem": null,
         "knownMoves": [
-          "Quick Attack",
+          "Water Gun",
           "Growl",
-          "Thunder Wave",
-          "Thunder Shock"
+          "Tackle",
+          "Confusion"
         ],
-        "species": "Pikachu"
+        "species": "Slowpoke"
       },
       {
         "level": 9,
@@ -33,17 +33,17 @@
         "species": "Pidgey"
       },
       {
-        "level": 8,
+        "level": 9,
         "form": null,
         "isMega": false,
         "heldItem": null,
         "knownMoves": [
-          "Water Gun",
+          "Quick Attack",
           "Growl",
-          "Tackle",
-          "Confusion"
+          "Thunder Wave",
+          "Thunder Shock"
         ],
-        "species": "Slowpoke"
+        "species": "Pikachu"
       }
     ],
     "rewards": [],
