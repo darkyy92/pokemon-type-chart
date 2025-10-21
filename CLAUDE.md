@@ -4,15 +4,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Pokémon Legends Z-A Battle Helper** - A mobile-first React app designed to help players quickly find type matchups during battles. The primary use case is: enemy appears → search Pokemon → see counters → win battle in < 10 seconds.
+**Pokémon Legends Z-A Battle Helper** - A modern, production-grade Single Page Application (SPA) built with React 18 and TypeScript. This is a mobile-first web app designed to help players quickly find type matchups during battles. The primary use case is: enemy appears → search Pokemon → see counters → win battle in < 10 seconds.
+
+**Architecture:**
+This is a **full-featured React/TypeScript web application**, NOT a simple HTML file. The codebase follows modern web development best practices with:
+- Component-based architecture
+- Type-safe data models and utilities
+- Client-side routing (SPA)
+- Build-time optimization and code splitting
+- Hot Module Replacement (HMR) for development
 
 **Tech Stack:**
-- React 18 + TypeScript
-- Vite (dev server + build tool)
-- Tailwind CSS (styling)
-- shadcn/ui components (UI primitives)
-- Fuse.js (fuzzy search)
-- React Router (hash routing for GitHub Pages)
+- **React 18** - Component framework with hooks
+- **TypeScript** - Strict type safety throughout
+- **Vite** - Modern build tool with instant HMR
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - Accessible component primitives built on Radix UI
+- **Fuse.js** - Client-side fuzzy search engine
+- **React Router** - Hash-based routing (for GitHub Pages compatibility)
 
 ## Core Development Rules
 
@@ -38,8 +47,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **NOT priorities:**
 - SEO (internal tool, not public-facing)
-- Complex features (keep it simple)
-- Perfect code architecture (UX > code beauty)
+- Over-engineering (keep features simple and focused)
+- Adding features that slow down the core battle lookup flow
 
 ### 3. **Use Premade Components - Don't Reinvent the Wheel** 🧩
 
@@ -123,30 +132,40 @@ Bad: Launch subagents sequentially when they don't depend on each other
 
 ## Project Structure
 
+**Modern React/TypeScript SPA with feature-based organization:**
+
 ```
 pokemon-type-chart/
-├── src/
-│   ├── components/
+├── src/                           # Source code (TypeScript/TSX)
+│   ├── components/                # Reusable React components
 │   │   ├── TypeBadge.tsx          # Pokemon type badge with colors
 │   │   ├── BottomNav.tsx          # Fixed bottom navigation
-│   │   └── ui/                    # shadcn/ui components (future)
-│   ├── data/
+│   │   └── ui/                    # shadcn/ui components (Radix-based)
+│   ├── data/                      # Static data modules (type-safe)
 │   │   ├── pokemon.ts             # All 304 Pokemon (232 + 74 Megas)
 │   │   ├── typeMatchupsOffense.ts # Offensive matchups (18 types)
 │   │   └── typeMatchupsDefense.ts # Defensive matchups (18 types)
-│   ├── pages/
-│   │   ├── Search.tsx             # Search-first homepage
-│   │   ├── PokemonDetail.tsx      # USE/AVOID sections
-│   │   └── TypeChart.tsx          # Full type chart (Attack/Defense)
-│   ├── utils/
+│   ├── pages/                     # Route-level components (React Router)
+│   │   ├── Search.tsx             # Search-first homepage with autocomplete
+│   │   ├── PokemonDetail.tsx      # USE/AVOID sections (dynamic route)
+│   │   └── TypeChart.tsx          # Full type chart (Attack/Defense tabs)
+│   ├── utils/                     # Business logic utilities
 │   │   └── typeCalculator.ts      # Dual-type effectiveness calculator
-│   ├── types.ts                   # TypeScript interfaces
-│   ├── App.tsx                    # Routes + bottom nav
-│   ├── main.tsx                   # React entry point
+│   ├── types.ts                   # Global TypeScript interfaces & types
+│   ├── App.tsx                    # Root component (routes + layout)
+│   ├── main.tsx                   # React entry point (ReactDOM.render)
 │   └── index.css                  # Tailwind imports + global styles
+├── dist/                          # Build output (Vite generates this)
+├── node_modules/                  # NPM dependencies
+├── public/                        # Static assets (copied as-is)
+├── .github/workflows/             # CI/CD (GitHub Actions for deployment)
 ├── lumiose-pokedex.md             # Pokemon data source (Legends Z-A)
 ├── TODO.md                        # Future features (My Team, etc.)
-└── index.html                     # Vite entry point
+├── package.json                   # NPM dependencies & scripts
+├── tsconfig.json                  # TypeScript compiler config
+├── tailwind.config.js             # Tailwind CSS config (custom colors)
+├── vite.config.ts                 # Vite build configuration
+└── index.html                     # HTML entry point (Vite injects bundle)
 ```
 
 ## Key Features
@@ -198,21 +217,33 @@ Example: Hawlucha (Flying/Fighting)
 ### Type Matchups
 - **Offense:** `src/data/typeMatchupsOffense.ts` - What each type is strong/weak against
 - **Defense:** `src/data/typeMatchupsDefense.ts` - What each type resists/is weak to
-- **Source:** Extracted from original `index-old.html` (18-type grid)
+- **Source:** Official Pokemon type effectiveness data (verified against Bulbapedia/Serebii)
+- **Format:** TypeScript objects with type-safe mappings
 
 ### Pokemon Sprites
-- **Source:** PokeAPI CDN (free, no auth required)
-- **URL pattern:** `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{id}.png`
+- **Source:** PokemonDB.net (free, no auth required, more reliable than PokeAPI)
+- **URL pattern:** Uses Pokemon name-based URLs for better Mega Evolution support
 - **Lazy loaded:** Only load when Pokemon appears in search results
 
 ## Development Workflow
 
 ### Local Development
+**This is a build-based application** - changes to TypeScript/React files require Vite's dev server to compile and serve.
+
 ```bash
-npm run dev       # Start dev server (http://localhost:5173)
-npm run build     # Production build
-npm run preview   # Preview production build
+npm install       # Install dependencies (first time only)
+npm run dev       # Start Vite dev server with HMR (http://localhost:5173)
+npm run build     # Production build (outputs to dist/)
+npm run preview   # Preview production build locally
+npm run lint      # Run ESLint (if configured)
 ```
+
+**Development flow:**
+1. Run `npm run dev` to start the dev server
+2. Edit files in `src/` - Vite will auto-reload with HMR
+3. Test changes at `http://localhost:5173`
+4. Build for production with `npm run build`
+5. Preview production build with `npm run preview`
 
 ### Testing Checklist
 Before marking a feature complete:
@@ -304,9 +335,10 @@ High priority features tracked in `TODO.md`:
 - Verify `getTypeColor()` in `typeCalculator.ts`
 
 ### Sprites not loading
-- Verify PokeAPI URL format
-- Check Pokemon ID is correct
-- Test in browser: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png`
+- Verify PokemonDB.net URL format
+- Check Pokemon name formatting (lowercase, hyphens for Mega forms)
+- Check browser console for CORS or network errors
+- Test sprite URL directly in browser
 
 ### Calculation wrong
 - Verify defense matchup data accuracy
