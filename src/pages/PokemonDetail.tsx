@@ -94,7 +94,7 @@ export function PokemonDetail() {
                     <img
                       src={`/pokemon-type-chart/icons/${type}.svg`}
                       alt={type}
-                      className="w-6 h-6"
+                      className="w-8 h-8"
                     />
                     <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}
@@ -131,7 +131,7 @@ export function PokemonDetail() {
                     <img
                       src={`/pokemon-type-chart/icons/${type}.svg`}
                       alt={type}
-                      className="w-6 h-6"
+                      className="w-8 h-8"
                     />
                     <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}
