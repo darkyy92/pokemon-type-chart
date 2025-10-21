@@ -41,14 +41,13 @@ export function Search() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6">
       <div className="w-full max-w-2xl">
-        {/* Title */}
+        {/* Logo */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
-            Pokémon Legends Z-A
-          </h1>
-          <p className="text-white/80 text-lg">
-            Battle Helper
-          </p>
+          <img
+            src="/pokemon-type-chart/legends-za-logo.png"
+            alt="Pokémon Legends Z-A"
+            className="w-full max-w-md mx-auto h-auto"
+          />
         </div>
 
         {/* Search Box */}
