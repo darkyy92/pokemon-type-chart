@@ -37,7 +37,8 @@
           "Growl",
           "Thunder Wave",
           "Thunder Shock"
-        ]
+        ],
+        "species": "Pikachu"
       },
       {
         "level": 9,
@@ -48,7 +49,8 @@
           "Tackle",
           "Growl",
           "Gust"
-        ]
+        ],
+        "species": "Pidgey"
       },
       {
         "level": 8,
@@ -60,7 +62,8 @@
           "Growl",
           "Tackle",
           "Confusion"
-        ]
+        ],
+        "species": "Slowpoke"
       }
     ],
     "rewards": [],
@@ -96,7 +99,8 @@
         "knownMoves": [
           "Poison Sting",
           "String Shot"
-        ]
+        ],
+        "species": "Weedle"
       }
     ],
     "rewards": [],
@@ -127,7 +131,8 @@
         "knownMoves": [
           "Vine Whip",
           "Growth"
-        ]
+        ],
+        "species": "Bellsprout"
       }
     ],
     "rewards": [],
@@ -158,7 +163,8 @@
         "knownMoves": [
           "Tackle",
           "Leer"
-        ]
+        ],
+        "species": "Bunnelby"
       },
       {
         "level": 6,
@@ -168,7 +174,8 @@
         "knownMoves": [
           "Growl",
           "Peck"
-        ]
+        ],
+        "species": "Fletchling"
       }
     ],
     "rewards": [],
@@ -200,7 +207,8 @@
           "Tackle",
           "Growl",
           "Thunder Shock"
-        ]
+        ],
+        "species": "Mareep"
       },
       {
         "level": 7,
@@ -211,7 +219,8 @@
           "Tackle",
           "Leer",
           "Mud Shot"
-        ]
+        ],
+        "species": "Bunnelby"
       }
     ],
     "rewards": [],
@@ -243,7 +252,8 @@
           "Poison Sting",
           "String Shot",
           "Harden"
-        ]
+        ],
+        "species": "Kakuna"
       },
       {
         "level": 8,
@@ -253,7 +263,8 @@
         "knownMoves": [
           "Tackle",
           "Growl"
-        ]
+        ],
+        "species": "Pidgey"
       }
     ],
     "rewards": [],
@@ -286,7 +297,8 @@
           "Gust",
           "Quick Attack",
           "Twister"
-        ]
+        ],
+        "species": "Pidgeotto"
       },
       {
         "level": 18,
@@ -298,7 +310,8 @@
           "Harden",
           "Rock Throw",
           "Dragon Breath"
-        ]
+        ],
+        "species": "Onix"
       }
     ],
     "rewards": [],
@@ -350,7 +363,8 @@
           "Fairy Wind",
           "Fake Tears",
           "Disarming Voice"
-        ]
+        ],
+        "species": "Spritzee"
       },
       {
         "level": 15,
@@ -362,7 +376,8 @@
           "Charm",
           "Fairy Wind",
           "Fake Tears"
-        ]
+        ],
+        "species": "Swirlix"
       },
       {
         "level": 16,
@@ -374,7 +389,8 @@
           "Infestation",
           "Gust",
           "Draining Kiss"
-        ]
+        ],
+        "species": "Vivillon"
       }
     ],
     "rewards": [],
@@ -407,7 +423,8 @@
           "Infestation",
           "Gust",
           "Light Screen"
-        ]
+        ],
+        "species": "Vivillon"
       },
       {
         "level": 15,
@@ -419,7 +436,8 @@
           "Fake Tears",
           "Charm",
           "Tackle"
-        ]
+        ],
+        "species": "Swirlix"
       },
       {
         "level": 15,
@@ -430,7 +448,8 @@
           "Fairy Wind",
           "Disarming Voice",
           "Fake Tears"
-        ]
+        ],
+        "species": "Spritzee"
       }
     ],
     "rewards": [],
@@ -463,7 +482,8 @@
           "String Shot",
           "Absorb",
           "Infestation"
-        ]
+        ],
+        "species": "Spinarak"
       },
       {
         "level": 10,
@@ -475,7 +495,8 @@
           "Leer",
           "Rollout",
           "Protect"
-        ]
+        ],
+        "species": "Venipede"
       }
     ],
     "rewards": [],
@@ -508,7 +529,8 @@
           "Disarming Voice",
           "Confusion",
           "Hypnosis"
-        ]
+        ],
+        "species": "Ralts"
       },
       {
         "level": 11,
@@ -520,7 +542,8 @@
           "Thunder Shock",
           "Quick Attack",
           "Thunder Wave"
-        ]
+        ],
+        "species": "Pichu"
       }
     ],
     "rewards": [],
@@ -573,7 +596,8 @@
           "Bite",
           "Thunder Fang",
           "Fire Fang"
-        ]
+        ],
+        "species": "Furfrou"
       },
       {
         "level": 21,
@@ -585,7 +609,8 @@
           "Psybeam",
           "Shadow Ball",
           "Reflect"
-        ]
+        ],
+        "species": "Kadabra"
       },
       {
         "level": 20,
@@ -597,7 +622,8 @@
           "Razor Leaf",
           "Sleep Powder",
           "Spikes"
-        ]
+        ],
+        "species": "Roselia"
       },
       {
         "level": 20,
@@ -609,7 +635,8 @@
           "Rollout",
           "Screech",
           "Spikes"
-        ]
+        ],
+        "species": "Venipede"
       }
     ],
     "rewards": [],
@@ -647,7 +674,8 @@
           "Ember",
           "Bite",
           "Protect"
-        ]
+        ],
+        "species": "Simisear"
       },
       {
         "level": 24,
@@ -659,7 +687,8 @@
           "Water Gun",
           "Bite",
           "Protect"
-        ]
+        ],
+        "species": "Simipour"
       },
       {
         "level": 24,
@@ -671,7 +700,8 @@
           "Magical Leaf",
           "Bite",
           "Protect"
-        ]
+        ],
+        "species": "Simisage"
       }
     ],
     "rewards": [],
@@ -709,7 +739,8 @@
           "Vine Whip",
           "Bite",
           "Magical Leaf"
-        ]
+        ],
+        "species": "Simisage"
       },
       {
         "level": 24,
@@ -721,7 +752,8 @@
           "Bite",
           "Bubble Beam",
           "Water Gun"
-        ]
+        ],
+        "species": "Simipour"
       },
       {
         "level": 24,
@@ -733,7 +765,8 @@
           "Bite",
           "Ember",
           "Flame Wheel"
-        ]
+        ],
+        "species": "Simisear"
       }
     ],
     "rewards": [],
@@ -766,7 +799,8 @@
           "Icy Wind",
           "Glare",
           "Safeguard"
-        ]
+        ],
+        "species": "Drampa"
       },
       {
         "level": 30,
@@ -778,7 +812,8 @@
           "Brutal Swing",
           "Draining Kiss",
           "Charm"
-        ]
+        ],
+        "species": "Buneary"
       },
       {
         "level": 30,
@@ -790,7 +825,8 @@
           "Whirlpool",
           "Night Slash",
           "Slash"
-        ]
+        ],
+        "species": "Absol"
       },
       {
         "level": 30,
@@ -802,7 +838,8 @@
           "Fire Spin",
           "Bite",
           "Roar"
-        ]
+        ],
+        "species": "Furfrou"
       }
     ],
     "rewards": [],
@@ -835,7 +872,8 @@
           "Sand Tomb",
           "Dig",
           "Crunch"
-        ]
+        ],
+        "species": "Hippopotas"
       },
       {
         "level": 22,
@@ -847,7 +885,8 @@
           "Sand Tomb",
           "Bite",
           "Dig"
-        ]
+        ],
+        "species": "Sandile"
       }
     ],
     "rewards": [],
@@ -900,7 +939,8 @@
           "Volt Switch",
           "Eerie Impulse",
           "Crunch"
-        ]
+        ],
+        "species": "Dedenne"
       },
       {
         "level": 38,
@@ -912,7 +952,8 @@
           "Spark",
           "Mud Shot",
           "Charge"
-        ]
+        ],
+        "species": "Helioptile"
       },
       {
         "level": 38,
@@ -924,7 +965,8 @@
           "Dragon Pulse",
           "Power Gem",
           "Cotton Guard"
-        ]
+        ],
+        "species": "Ampharos"
       },
       {
         "level": 37,
@@ -936,7 +978,8 @@
           "Parabolic Charge",
           "Swift",
           "Bulldoze"
-        ]
+        ],
+        "species": "Dedenne"
       }
     ],
     "rewards": [],
@@ -1105,7 +1148,8 @@
           "Brick Break",
           "Iron Head",
           "Rock Slide"
-        ]
+        ],
+        "species": "Falinks"
       },
       {
         "level": 46,
@@ -1117,7 +1161,8 @@
           "Brutal Swing",
           "Bulldoze",
           "Bulk Up"
-        ]
+        ],
+        "species": "Machop"
       },
       {
         "level": 46,
@@ -1129,7 +1174,8 @@
           "Zen Headbutt",
           "Ice Punch",
           "Protect"
-        ]
+        ],
+        "species": "Medicham"
       },
       {
         "level": 45,
@@ -1141,7 +1187,8 @@
           "Pin Missile",
           "Rock Blast",
           "Aerial Ace"
-        ]
+        ],
+        "species": "Heracross"
       }
     ],
     "rewards": [],
@@ -1212,7 +1259,8 @@
           "X-Scissor",
           "Earthquake",
           "Protect"
-        ]
+        ],
+        "species": "Scolipede"
       },
       {
         "level": 51,
@@ -1224,7 +1272,8 @@
           "Sludge Bomb",
           "Shadow Ball",
           "Synthesis"
-        ]
+        ],
+        "species": "Roserade"
       },
       {
         "level": 51,
@@ -1236,7 +1285,8 @@
           "Bounce",
           "Dragon Rush",
           "Crunch"
-        ]
+        ],
+        "species": "Gyarados"
       },
       {
         "level": 50,
@@ -1248,7 +1298,8 @@
           "Fire Fang",
           "Leech Life",
           "Toxic"
-        ]
+        ],
+        "species": "Scolipede"
       }
     ],
     "rewards": [],
@@ -1333,7 +1384,8 @@
           "Air Slash",
           "Mystical Fire",
           "Protect"
-        ]
+        ],
+        "species": "Altaria"
       },
       {
         "level": 58,
@@ -1345,7 +1397,8 @@
           "Psychic",
           "Mystical Fire",
           "Calm Mind"
-        ]
+        ],
+        "species": "Gardevoir"
       },
       {
         "level": 58,
@@ -1357,7 +1410,8 @@
           "Blizzard",
           "Rock Blast",
           "Protect"
-        ]
+        ],
+        "species": "Aurorus"
       },
       {
         "level": 58,
@@ -1369,7 +1423,8 @@
           "Iron Head",
           "Crunch",
           "Fire Fang"
-        ]
+        ],
+        "species": "Mawile"
       },
       {
         "level": 57,
@@ -1381,7 +1436,8 @@
           "Stone Edge",
           "Flash Cannon",
           "Stealth Rock"
-        ]
+        ],
+        "species": "Clefable"
       }
     ],
     "rewards": [],
@@ -1424,7 +1480,8 @@
           "Dragon Rush",
           "Air Slash",
           "Protect"
-        ]
+        ],
+        "species": "Charizard"
       },
       {
         "level": 62,
@@ -1436,7 +1493,8 @@
           "Aerial Ace",
           "Earthquake",
           "Fire Fang"
-        ]
+        ],
+        "species": "Garchomp"
       },
       {
         "level": 62,
@@ -1448,7 +1506,8 @@
           "Crunch",
           "Earthquake",
           "Ice Punch"
-        ]
+        ],
+        "species": "Tyranitar"
       },
       {
         "level": 61,
@@ -1460,7 +1519,8 @@
           "Hyper Voice",
           "Earth Power",
           "Snarl"
-        ]
+        ],
+        "species": "Houndoom"
       },
       {
         "level": 61,
@@ -1472,7 +1532,8 @@
           "Night Slash",
           "Liquidation",
           "Hypnosis"
-        ]
+        ],
+        "species": "Malamar"
       },
       {
         "level": 61,
@@ -1484,7 +1545,8 @@
           "Crunch",
           "Bullet Punch",
           "Protect"
-        ]
+        ],
+        "species": "Machop"
       }
     ],
     "rewards": [],
