@@ -134,21 +134,21 @@ function TypeCard({ type, mode }: TypeCardProps) {
           <>
             <EffectivenessSection
               title="Super effective against:"
-              types={matchups.superEffective}
+              types={(matchups as any).superEffective}
               color="bg-green-500"
               symbol="2×"
             />
             <div className="border-t border-gray-200" />
             <EffectivenessSection
               title="Not very effective against:"
-              types={matchups.notEffective}
+              types={(matchups as any).notEffective}
               color="bg-orange-500"
               symbol="½×"
             />
             <div className="border-t border-gray-200" />
             <EffectivenessSection
               title="No effect against:"
-              types={matchups.noEffect}
+              types={(matchups as any).noEffect}
               color="bg-gray-500"
               symbol="0×"
             />
