@@ -5,6 +5,7 @@ import {
   calculateDefenseMatchups,
   groupMatchupsByCategory,
   getPokemonSpriteUrl,
+  getTypeColor,
 } from '../utils/typeCalculator';
 
 export function PokemonDetail() {
@@ -82,17 +83,23 @@ export function PokemonDetail() {
               USE THESE TYPES
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {useTheseTypes.map(({ type, multiplier }) => (
-                <div
-                  key={type}
-                  className="bg-white rounded-xl p-4 flex flex-col items-center gap-2"
-                >
-                  <TypeBadge type={type} size="lg" />
-                  <span className="text-2xl font-bold text-green-600">
-                    {multiplier}×
-                  </span>
-                </div>
-              ))}
+              {useTheseTypes.map(({ type, multiplier }) => {
+                const badgeColor = multiplier === 4 ? 'bg-yellow-500' : 'bg-green-600';
+                return (
+                  <div
+                    key={type}
+                    className="relative rounded-xl overflow-hidden shadow-lg p-4 flex flex-col items-center justify-center min-h-20"
+                    style={{ backgroundColor: getTypeColor(type) }}
+                  >
+                    <span className="text-base md:text-lg font-bold text-white capitalize text-center">
+                      {type}
+                    </span>
+                    <div className={`absolute top-2 right-2 ${badgeColor} text-white font-bold text-xs md:text-sm px-2 py-1 rounded-full`}>
+                      {multiplier}×
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
@@ -103,22 +110,28 @@ export function PokemonDetail() {
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-center gap-2">
               AVOID THESE TYPES
             </h2>
-            <div className="bg-white rounded-xl p-4">
-              <div className="space-y-3">
-                {avoidTheseTypes.map(({ type, multiplier }) => (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {avoidTheseTypes.map(({ type, multiplier }) => {
+                const getBadgeColor = () => {
+                  if (multiplier === 0) return 'bg-gray-900';
+                  if (multiplier === 0.25) return 'bg-red-700';
+                  return 'bg-orange-500';
+                };
+                return (
                   <div
                     key={type}
-                    className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+                    className="relative rounded-xl overflow-hidden shadow-lg p-4 flex flex-col items-center justify-center min-h-20"
+                    style={{ backgroundColor: getTypeColor(type) }}
                   >
-                    <TypeBadge type={type} size="md" />
-                    <span className="text-xl font-bold text-red-600">
-                      {multiplier}×
-                      {multiplier === 0 && ' (Immune)'}
-                      {multiplier === 0.25 && ' (Very Resistant)'}
+                    <span className="text-base md:text-lg font-bold text-white capitalize text-center">
+                      {type}
                     </span>
+                    <div className={`absolute top-2 right-2 ${getBadgeColor()} text-white font-bold text-xs md:text-sm px-2 py-1 rounded-full`}>
+                      {multiplier}×
+                    </div>
                   </div>
-                ))}
-              </div>
+                );
+              })}
             </div>
           </div>
         )}
