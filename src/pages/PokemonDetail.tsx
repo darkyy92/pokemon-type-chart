@@ -91,6 +91,11 @@ export function PokemonDetail() {
                     className="rounded-xl overflow-hidden shadow-lg p-3 flex flex-col items-center justify-center gap-2 min-h-16"
                     style={{ backgroundColor: getTypeColor(type) }}
                   >
+                    <img
+                      src={`/pokemon-type-chart/icons/${type}.svg`}
+                      alt={type}
+                      className="w-6 h-6"
+                    />
                     <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}
                     </span>
@@ -123,6 +128,11 @@ export function PokemonDetail() {
                     className="rounded-xl overflow-hidden shadow-lg p-3 flex flex-col items-center justify-center gap-2 min-h-16"
                     style={{ backgroundColor: getTypeColor(type) }}
                   >
+                    <img
+                      src={`/pokemon-type-chart/icons/${type}.svg`}
+                      alt={type}
+                      className="w-6 h-6"
+                    />
                     <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}
                     </span>
