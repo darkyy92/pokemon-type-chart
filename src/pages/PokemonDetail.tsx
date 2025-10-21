@@ -84,7 +84,7 @@ export function PokemonDetail() {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {useTheseTypes.map(({ type, multiplier }) => {
-                const badgeColor = multiplier === 4 ? 'bg-yellow-500' : 'bg-green-600';
+                const textColor = multiplier === 4 ? 'text-yellow-500' : 'text-green-600';
                 return (
                   <div
                     key={type}
@@ -94,7 +94,7 @@ export function PokemonDetail() {
                     <span className="text-base md:text-lg font-bold text-white capitalize text-center">
                       {type}
                     </span>
-                    <div className={`absolute top-2 right-2 ${badgeColor} text-white font-bold text-xs md:text-sm px-2 py-1 rounded-full`}>
+                    <div className={`absolute top-2 right-2 bg-white font-bold text-xs md:text-sm px-2 py-1 rounded-full ${textColor}`}>
                       {multiplier}×
                     </div>
                   </div>
@@ -112,10 +112,10 @@ export function PokemonDetail() {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {avoidTheseTypes.map(({ type, multiplier }) => {
-                const getBadgeColor = () => {
-                  if (multiplier === 0) return 'bg-gray-900';
-                  if (multiplier === 0.25) return 'bg-red-700';
-                  return 'bg-orange-500';
+                const getTextColor = () => {
+                  if (multiplier === 0) return 'text-gray-900';
+                  if (multiplier === 0.25) return 'text-red-700';
+                  return 'text-orange-500';
                 };
                 return (
                   <div
@@ -126,7 +126,7 @@ export function PokemonDetail() {
                     <span className="text-base md:text-lg font-bold text-white capitalize text-center">
                       {type}
                     </span>
-                    <div className={`absolute top-2 right-2 ${getBadgeColor()} text-white font-bold text-xs md:text-sm px-2 py-1 rounded-full`}>
+                    <div className={`absolute top-2 right-2 bg-white font-bold text-xs md:text-sm px-2 py-1 rounded-full ${getTextColor()}`}>
                       {multiplier}×
                     </div>
                   </div>
