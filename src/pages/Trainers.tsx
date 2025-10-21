@@ -19,13 +19,16 @@ export function Trainers() {
   useEffect(() => {
     const loadTrainers = async () => {
       try {
+        // Use import.meta.env.BASE_URL to handle GitHub Pages base path
+        const basePath = import.meta.env.BASE_URL || '/';
+
         // Load lightweight index first
-        const indexResponse = await fetch('/data/trainers.index.json');
+        const indexResponse = await fetch(`${basePath}data/trainers.index.json`);
         const index: TrainerIndex[] = await indexResponse.json();
         setTrainersIndex(index);
 
         // Load full data
-        const dataResponse = await fetch('/data/trainers.json');
+        const dataResponse = await fetch(`${basePath}data/trainers.json`);
         const data: TrainerEntry[] = await dataResponse.json();
         setTrainersData(data);
 
