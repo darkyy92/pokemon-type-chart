@@ -244,93 +244,130 @@ export function Trainers() {
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
                 Party ({selectedTrainer.party.length})
               </h3>
-              <div className="space-y-4">
-                {selectedTrainer.party.map((pokemon, idx) => {
-                  const pokemonData = getPokemonData(pokemon.species);
 
-                  return (
-                    <div
-                      key={idx}
-                      className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600"
-                    >
-                      <div className="flex items-start gap-4">
-                        {/* Pokemon Sprite */}
-                        <div className="flex-shrink-0">
-                          <img
-                            src={getPokemonSprite(pokemon.species)}
-                            alt={pokemon.species}
-                            className="w-20 h-20 object-contain"
-                            loading="lazy"
-                          />
-                        </div>
+              {selectedTrainer.party.length === 0 ? (
+                /* Empty party message */
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 border border-gray-200 dark:border-gray-600 text-center">
+                  <div className="text-gray-400 dark:text-gray-500 mb-2">
+                    <svg className="w-16 h-16 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium mb-1">
+                    No Pokemon Data Available
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-500">
+                    Party data for this trainer hasn't been added yet.
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  {selectedTrainer.party.map((pokemon, idx) => {
+                    // Handle missing species gracefully
+                    const species = pokemon.species || 'Unknown Pokemon';
+                    const pokemonData = pokemon.species ? getPokemonData(pokemon.species) : undefined;
 
-                        {/* Pokemon Info */}
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-start justify-between gap-2 mb-2">
-                            <div>
-                              <h4 className="font-bold text-gray-900 dark:text-white text-lg">
-                                {pokemon.species}
-                                {pokemon.isMega && (
-                                  <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold">
-                                    MEGA
-                                  </span>
+                    return (
+                      <div
+                        key={idx}
+                        className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600"
+                      >
+                        <div className="flex items-start gap-4">
+                          {/* Pokemon Sprite */}
+                          {pokemon.species ? (
+                            <div className="flex-shrink-0">
+                              <img
+                                src={getPokemonSprite(pokemon.species)}
+                                alt={pokemon.species}
+                                className="w-20 h-20 object-contain"
+                                loading="lazy"
+                                onError={(e) => {
+                                  // Fallback to placeholder on image error
+                                  (e.target as HTMLImageElement).style.display = 'none';
+                                }}
+                              />
+                            </div>
+                          ) : (
+                            <div className="flex-shrink-0 w-20 h-20 bg-gray-200 dark:bg-gray-600 rounded-lg flex items-center justify-center">
+                              <svg className="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            </div>
+                          )}
+
+                          {/* Pokemon Info */}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-start justify-between gap-2 mb-2">
+                              <div>
+                                <h4 className="font-bold text-gray-900 dark:text-white text-lg">
+                                  {species}
+                                  {pokemon.isMega && (
+                                    <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold">
+                                      MEGA
+                                    </span>
+                                  )}
+                                  {!pokemon.species && (
+                                    <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400 font-semibold">
+                                      DATA PENDING
+                                    </span>
+                                  )}
+                                </h4>
+                                {pokemon.level && (
+                                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                                    Level {pokemon.level}
+                                  </p>
                                 )}
-                              </h4>
-                              {pokemon.level && (
-                                <p className="text-sm text-gray-600 dark:text-gray-400">
-                                  Level {pokemon.level}
-                                </p>
+                              </div>
+
+                              {/* View in Pokedex link */}
+                              {pokemonData && (
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    navigate(`/pokemon/${pokemonData.id}`);
+                                    closeDrawer();
+                                  }}
+                                  className="text-xs px-2.5 py-1 rounded-md bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200 hover:bg-purple-200 dark:hover:bg-purple-800 font-medium transition-colors"
+                                >
+                                  View
+                                </button>
                               )}
                             </div>
 
-                            {/* View in Pokedex link */}
-                            {pokemonData && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  navigate(`/pokemon/${pokemonData.id}`);
-                                  closeDrawer();
-                                }}
-                                className="text-xs px-2.5 py-1 rounded-md bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200 hover:bg-purple-200 dark:hover:bg-purple-800 font-medium transition-colors"
-                              >
-                                View
-                              </button>
+                            {/* Held Item */}
+                            {pokemon.heldItem && (
+                              <div className="mb-2">
+                                <span className="text-xs px-2 py-0.5 rounded bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 font-medium">
+                                  {pokemon.heldItem}
+                                </span>
+                              </div>
+                            )}
+
+                            {/* Known Moves */}
+                            {pokemon.knownMoves && pokemon.knownMoves.length > 0 && (
+                              <div>
+                                <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1.5">
+                                  Known Moves:
+                                </p>
+                                <div className="flex flex-wrap gap-1.5">
+                                  {pokemon.knownMoves.map((move, moveIdx) => (
+                                    <span
+                                      key={moveIdx}
+                                      className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 font-medium"
+                                    >
+                                      {move}
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
                             )}
                           </div>
-
-                          {/* Held Item */}
-                          {pokemon.heldItem && (
-                            <div className="mb-2">
-                              <span className="text-xs px-2 py-0.5 rounded bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 font-medium">
-                                {pokemon.heldItem}
-                              </span>
-                            </div>
-                          )}
-
-                          {/* Known Moves */}
-                          {pokemon.knownMoves && pokemon.knownMoves.length > 0 && (
-                            <div>
-                              <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1.5">
-                                Known Moves:
-                              </p>
-                              <div className="flex flex-wrap gap-1.5">
-                                {pokemon.knownMoves.map((move, moveIdx) => (
-                                  <span
-                                    key={moveIdx}
-                                    className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 font-medium"
-                                  >
-                                    {move}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          )}
                         </div>
                       </div>
-                    </div>
-                  );
-                })}
-              </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
 
             {/* Sources */}
