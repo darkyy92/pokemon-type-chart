@@ -1,27 +1,7 @@
 [
   {
-    "id": "rank-z-zach-the-driver",
-    "name": "Zach the Driver",
-    "rank": "Z",
-    "category": "PromotionMatch",
-    "faction": null,
-    "battle_order": null,
-    "party": [],
-    "rewards": [],
-    "notes": "",
-    "sources": [
-      {
-        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
-        "site": "gamespot",
-        "scraped_at": "2025-10-21T00:00:00Z"
-      }
-    ],
-    "last_verified": "2025-10-21",
-    "version": "20251021"
-  },
-  {
     "id": "rank-z-zach",
-    "name": "Zach",
+    "name": "Driver Zach",
     "rank": "Z",
     "category": "PromotionMatch",
     "faction": null,
@@ -327,26 +307,6 @@
     "version": "20251021"
   },
   {
-    "id": "rank-y-yvon-the-worker",
-    "name": "Yvon the Worker",
-    "rank": "Y",
-    "category": "PromotionMatch",
-    "faction": null,
-    "battle_order": null,
-    "party": [],
-    "rewards": [],
-    "notes": "",
-    "sources": [
-      {
-        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
-        "site": "gamespot",
-        "scraped_at": "2025-10-21T00:00:00Z"
-      }
-    ],
-    "last_verified": "2025-10-21",
-    "version": "20251021"
-  },
-  {
     "id": "rank-y-office-worker-yvon",
     "name": "Office Worker Yvon",
     "rank": "Y",
@@ -559,28 +519,8 @@
     "version": "20251021"
   },
   {
-    "id": "rank-x-xavi-the-grade-schooler",
-    "name": "Xavi the Grade-Schooler",
-    "rank": "X",
-    "category": "PromotionMatch",
-    "faction": null,
-    "battle_order": null,
-    "party": [],
-    "rewards": [],
-    "notes": "",
-    "sources": [
-      {
-        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
-        "site": "gamespot",
-        "scraped_at": "2025-10-21T00:00:00Z"
-      }
-    ],
-    "last_verified": "2025-10-21",
-    "version": "20251021"
-  },
-  {
     "id": "rank-x-xavi",
-    "name": "Xavi",
+    "name": "Grade-Schooler Xavi",
     "rank": "X",
     "category": "PromotionMatch",
     "faction": null,
@@ -826,7 +766,7 @@
           "Night Slash",
           "Slash"
         ],
-        "species": "Absol"
+        "species": "Sharpedo"
       },
       {
         "level": 30,
@@ -839,16 +779,21 @@
           "Bite",
           "Roar"
         ],
-        "species": "Furfrou"
+        "species": "Houndoom"
       }
     ],
     "rewards": [],
-    "notes": "First trainer with a Mega Evolution (Mega Drampa)",
+    "notes": "First trainer with a Mega Evolution (Mega Drampa). Defeating Vinnie promotes player from Rank W to Rank F. Located at Quasartico Inc. in Magenta District during Mission 10: The Secrets of Mega Evolution.",
     "sources": [
       {
         "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
         "site": "game8",
         "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
       }
     ],
     "last_verified": "2025-10-21",
@@ -896,26 +841,6 @@
         "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankv.shtml",
         "site": "serebii",
         "scraped_at": "2025-10-21T13:04:00Z"
-      }
-    ],
-    "last_verified": "2025-10-21",
-    "version": "20251021"
-  },
-  {
-    "id": "rank-f-vinnie",
-    "name": "Vinnie",
-    "rank": "F",
-    "category": "PromotionMatch",
-    "faction": null,
-    "battle_order": null,
-    "party": [],
-    "rewards": [],
-    "notes": "Listed as \"Rank F (???)\" in source - may be incorrect rank designation",
-    "sources": [
-      {
-        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
-        "site": "gamespot",
-        "scraped_at": "2025-10-21T00:00:00Z"
       }
     ],
     "last_verified": "2025-10-21",
@@ -1850,9 +1775,58 @@
     "category": "PromotionMatch",
     "faction": null,
     "battle_order": null,
-    "party": [],
+    "party": [
+      {
+        "level": 62,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [],
+        "species": "Meowstic"
+      },
+      {
+        "level": 62,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [],
+        "species": "Goodra"
+      },
+      {
+        "level": 63,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [],
+        "species": "Emboar"
+      },
+      {
+        "level": 63,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [],
+        "species": "Manectric"
+      },
+      {
+        "level": 62,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [],
+        "species": "Avalugg"
+      },
+      {
+        "level": 64,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Meganiumite",
+        "knownMoves": [],
+        "species": "Meganium"
+      }
+    ],
     "rewards": [],
-    "notes": "",
+    "notes": "End-game Z-A Royale promotion match. Two of the Pokemon in his party are starters you didn't select (varies by player choice). Final Pokemon Mega Evolves into Mega Meganium.",
     "sources": [
       {
         "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
