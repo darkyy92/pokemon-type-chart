@@ -79,7 +79,6 @@ export function PokemonDetail() {
         {useTheseTypes.length > 0 && (
           <div className="bg-green-500 rounded-2xl shadow-2xl p-6 mb-4">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-center gap-2">
-              <span>✅</span>
               USE THESE TYPES
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -102,7 +101,6 @@ export function PokemonDetail() {
         {avoidTheseTypes.length > 0 && (
           <div className="bg-red-500 rounded-2xl shadow-2xl p-6">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-center gap-2">
-              <span>❌</span>
               AVOID THESE TYPES
             </h2>
             <div className="bg-white rounded-xl p-4">
