@@ -56,8 +56,8 @@ export function PokemonDetail() {
         </button>
 
         {/* Pokemon Header */}
-        <div className="bg-white rounded-2xl shadow-2xl p-6 mb-4">
-          <div className="flex items-center gap-6">
+        <div className="bg-white rounded-2xl shadow-2xl p-4 mb-4">
+          <div className="flex items-center gap-4">
             <img
               src={getPokemonSpriteUrl(pokemon)}
               alt={pokemon.name}
@@ -88,13 +88,13 @@ export function PokemonDetail() {
                 return (
                   <div
                     key={type}
-                    className="relative rounded-xl overflow-hidden shadow-lg p-4 flex flex-col items-center justify-center min-h-20"
+                    className="rounded-xl overflow-hidden shadow-lg p-3 flex flex-col items-center justify-center gap-2 min-h-16"
                     style={{ backgroundColor: getTypeColor(type) }}
                   >
-                    <span className="text-base md:text-lg font-bold text-white capitalize text-center">
+                    <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}
                     </span>
-                    <div className={`absolute top-2 right-2 bg-white font-bold text-xs md:text-sm px-2 py-1 rounded-full ${textColor}`}>
+                    <div className={`bg-white font-extrabold text-base md:text-lg px-3 py-1 rounded-full ${textColor}`}>
                       {multiplier}×
                     </div>
                   </div>
@@ -120,13 +120,13 @@ export function PokemonDetail() {
                 return (
                   <div
                     key={type}
-                    className="relative rounded-xl overflow-hidden shadow-lg p-4 flex flex-col items-center justify-center min-h-20"
+                    className="rounded-xl overflow-hidden shadow-lg p-3 flex flex-col items-center justify-center gap-2 min-h-16"
                     style={{ backgroundColor: getTypeColor(type) }}
                   >
-                    <span className="text-base md:text-lg font-bold text-white capitalize text-center">
+                    <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}
                     </span>
-                    <div className={`absolute top-2 right-2 bg-white font-bold text-xs md:text-sm px-2 py-1 rounded-full ${getTextColor()}`}>
+                    <div className={`bg-white font-extrabold text-base md:text-lg px-3 py-1 rounded-full ${getTextColor()}`}>
                       {multiplier}×
                     </div>
                   </div>
