@@ -1,4 +1,4 @@
-import { Pokemon, PokemonType } from '../types';
+import { Pokemon } from '../types';
 
 export const pokemonDatabase: Pokemon[] = [
   // Regular Pokemon (001-230)
