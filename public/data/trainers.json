@@ -1,0 +1,1909 @@
+[
+  {
+    "id": "rank-z-zach-the-driver",
+    "name": "Zach the Driver",
+    "rank": "Z",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": null,
+    "party": [],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-z-zach",
+    "name": "Zach",
+    "rank": "Z",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 1,
+    "party": [
+      {
+        "level": 9,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Quick Attack",
+          "Growl",
+          "Thunder Wave",
+          "Thunder Shock"
+        ]
+      },
+      {
+        "level": 9,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Growl",
+          "Gust"
+        ]
+      },
+      {
+        "level": 8,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Water Gun",
+          "Growl",
+          "Tackle",
+          "Confusion"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank Z",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankz.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-z-office-worker-jean",
+    "name": "Office Worker Jean",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 2,
+    "party": [
+      {
+        "level": 6,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Poison Sting",
+          "String Shot"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankz.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-z-office-worker-erica",
+    "name": "Office Worker Erica",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 3,
+    "party": [
+      {
+        "level": 6,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Vine Whip",
+          "Growth"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankz.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-z-backpacker-daniel",
+    "name": "Backpacker Daniel",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 4,
+    "party": [
+      {
+        "level": 6,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Leer"
+        ]
+      },
+      {
+        "level": 6,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Growl",
+          "Peck"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankz.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-z-nell",
+    "name": "Nell",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 5,
+    "party": [
+      {
+        "level": 7,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Growl",
+          "Thunder Shock"
+        ]
+      },
+      {
+        "level": 7,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Leer",
+          "Mud Shot"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankz.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-z-jogger-simon",
+    "name": "Jogger Simon",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 6,
+    "party": [
+      {
+        "level": 8,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Poison Sting",
+          "String Shot",
+          "Harden"
+        ]
+      },
+      {
+        "level": 8,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Growl"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankz.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-z-police-officer-emilie",
+    "name": "Police Officer Emilie",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 7,
+    "party": [
+      {
+        "level": 18,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Gust",
+          "Quick Attack",
+          "Twister"
+        ]
+      },
+      {
+        "level": 18,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Harden",
+          "Rock Throw",
+          "Dragon Breath"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankz.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-y-yvon-the-worker",
+    "name": "Yvon the Worker",
+    "rank": "Y",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": null,
+    "party": [],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-y-office-worker-yvon",
+    "name": "Office Worker Yvon",
+    "rank": "Y",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 1,
+    "party": [
+      {
+        "level": 15,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Fairy Wind",
+          "Fake Tears",
+          "Disarming Voice"
+        ]
+      },
+      {
+        "level": 15,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Tackle",
+          "Charm",
+          "Fairy Wind",
+          "Fake Tears"
+        ]
+      },
+      {
+        "level": 16,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Light Screen",
+          "Infestation",
+          "Gust",
+          "Draining Kiss"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank Y",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/ranky.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-y-yvon",
+    "name": "Yvon",
+    "rank": "Y",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 2,
+    "party": [
+      {
+        "level": 16,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Draining Kiss",
+          "Infestation",
+          "Gust",
+          "Light Screen"
+        ]
+      },
+      {
+        "level": 15,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Fairy Wind",
+          "Fake Tears",
+          "Charm",
+          "Tackle"
+        ]
+      },
+      {
+        "level": 15,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Fairy Wind",
+          "Disarming Voice",
+          "Fake Tears"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-y-hugo",
+    "name": "Hugo",
+    "rank": "Y",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 2,
+    "party": [
+      {
+        "level": 10,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Poison Sting",
+          "String Shot",
+          "Absorb",
+          "Infestation"
+        ]
+      },
+      {
+        "level": 10,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Poison Sting",
+          "Leer",
+          "Rollout",
+          "Protect"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/ranky.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-y-collector-roméo",
+    "name": "Collector Roméo",
+    "rank": "Y",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 3,
+    "party": [
+      {
+        "level": 11,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Growl",
+          "Disarming Voice",
+          "Confusion",
+          "Hypnosis"
+        ]
+      },
+      {
+        "level": 11,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Growl",
+          "Thunder Shock",
+          "Quick Attack",
+          "Thunder Wave"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/ranky.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-x-xavi-the-grade-schooler",
+    "name": "Xavi the Grade-Schooler",
+    "rank": "X",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": null,
+    "party": [],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-x-xavi",
+    "name": "Xavi",
+    "rank": "X",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 3,
+    "party": [
+      {
+        "level": 21,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Take Down",
+          "Bite",
+          "Thunder Fang",
+          "Fire Fang"
+        ]
+      },
+      {
+        "level": 21,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Confusion",
+          "Psybeam",
+          "Shadow Ball",
+          "Reflect"
+        ]
+      },
+      {
+        "level": 20,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Magical Leaf",
+          "Razor Leaf",
+          "Sleep Powder",
+          "Spikes"
+        ]
+      },
+      {
+        "level": 20,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Pin Missile",
+          "Rollout",
+          "Screech",
+          "Spikes"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank X",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankx.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-w-rintaro",
+    "name": "Rintaro",
+    "rank": "W",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 4,
+    "party": [
+      {
+        "level": 24,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Flame Wheel",
+          "Ember",
+          "Bite",
+          "Protect"
+        ]
+      },
+      {
+        "level": 24,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Bubble Beam",
+          "Water Gun",
+          "Bite",
+          "Protect"
+        ]
+      },
+      {
+        "level": 24,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Vine Whip",
+          "Magical Leaf",
+          "Bite",
+          "Protect"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-v-waiter-rintaro",
+    "name": "Waiter Rintaro",
+    "rank": "V",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 1,
+    "party": [
+      {
+        "level": 24,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Protect",
+          "Vine Whip",
+          "Bite",
+          "Magical Leaf"
+        ]
+      },
+      {
+        "level": 24,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Protect",
+          "Bite",
+          "Bubble Beam",
+          "Water Gun"
+        ]
+      },
+      {
+        "level": 24,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Protect",
+          "Bite",
+          "Ember",
+          "Flame Wheel"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank V - Uses the elemental monkey trio with Protect as Plus Move",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankv.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-v-vinnie",
+    "name": "Vinnie",
+    "rank": "V",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 5,
+    "party": [
+      {
+        "level": 32,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Twister",
+          "Icy Wind",
+          "Glare",
+          "Safeguard"
+        ]
+      },
+      {
+        "level": 30,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Quick Attack",
+          "Brutal Swing",
+          "Draining Kiss",
+          "Charm"
+        ]
+      },
+      {
+        "level": 30,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Aqua Jet",
+          "Whirlpool",
+          "Night Slash",
+          "Slash"
+        ]
+      },
+      {
+        "level": 30,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Fire Fang",
+          "Fire Spin",
+          "Bite",
+          "Roar"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "First trainer with a Mega Evolution (Mega Drampa)",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-v-backpacker-antoine",
+    "name": "Backpacker Antoine",
+    "rank": "V",
+    "category": "StandardTrainer",
+    "faction": null,
+    "battle_order": 7,
+    "party": [
+      {
+        "level": 22,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Curse",
+          "Sand Tomb",
+          "Dig",
+          "Crunch"
+        ]
+      },
+      {
+        "level": 22,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Leer",
+          "Sand Tomb",
+          "Bite",
+          "Dig"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankv.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-f-vinnie",
+    "name": "Vinnie",
+    "rank": "F",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": null,
+    "party": [],
+    "rewards": [],
+    "notes": "Listed as \"Rank F (???)\" in source - may be incorrect rank designation",
+    "sources": [
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-f-canari",
+    "name": "Canari",
+    "rank": "F",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 6,
+    "party": [
+      {
+        "level": 39,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Discharge",
+          "Volt Switch",
+          "Eerie Impulse",
+          "Crunch"
+        ]
+      },
+      {
+        "level": 38,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Discharge",
+          "Spark",
+          "Mud Shot",
+          "Charge"
+        ]
+      },
+      {
+        "level": 38,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Discharge",
+          "Dragon Pulse",
+          "Power Gem",
+          "Cotton Guard"
+        ]
+      },
+      {
+        "level": 37,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Volt Switch",
+          "Parabolic Charge",
+          "Swift",
+          "Bulldoze"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Second trainer listed as Rank F - possible duplicate or Vinnie may have different rank",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankf.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-naveen",
+    "name": "Naveen",
+    "rank": "E",
+    "category": "Boss",
+    "faction": "Team MZ",
+    "battle_order": 2,
+    "party": [
+      {
+        "level": 33,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 33,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 33,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "Team MZ member encountered at the Hotel during Reaching Rank E mission.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingranke.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-mani",
+    "name": "Mani",
+    "rank": "E",
+    "category": "Boss",
+    "faction": "DYN4MO",
+    "battle_order": 3,
+    "party": [
+      {
+        "level": 34,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 34,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 35,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "DYN4MO member encountered at Electrical Substation during Quiz Round 3.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingranke.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-tarragon",
+    "name": "Tarragon",
+    "rank": "E",
+    "category": "Boss",
+    "faction": "DYN4MO",
+    "battle_order": 4,
+    "party": [
+      {
+        "level": 36,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 36,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 37,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Excadrite",
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "DYN4MO member encountered at Racine Construction. Ground-type specialist.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingranke.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-e-ivor",
+    "name": "Ivor",
+    "rank": "E",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 7,
+    "party": [
+      {
+        "level": 47,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "No Retreat",
+          "Brick Break",
+          "Iron Head",
+          "Rock Slide"
+        ]
+      },
+      {
+        "level": 46,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Brick Break",
+          "Brutal Swing",
+          "Bulldoze",
+          "Bulk Up"
+        ]
+      },
+      {
+        "level": 46,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Rock Smash",
+          "Zen Headbutt",
+          "Ice Punch",
+          "Protect"
+        ]
+      },
+      {
+        "level": 45,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Brick Break",
+          "Pin Missile",
+          "Rock Blast",
+          "Aerial Ace"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank E - Fist of Justice organization member specializing in Fighting-types",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/ranke.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-taunie/urbain",
+    "name": "Taunie/Urbain",
+    "rank": "D",
+    "category": "Boss",
+    "faction": "Team MZ",
+    "battle_order": 6,
+    "party": [
+      {
+        "level": "25-26",
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "Team MZ rematch. Team varies: Option 1: Bayleef (25), Croconaw (25), Manectric (26). Option 2: Croconaw (25), Pignite (25), Manectric (26). Option 3: Pignite (25), Bayleef (25), Manectric (26).",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankd.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-d-corbeau",
+    "name": "Corbeau",
+    "rank": "D",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 8,
+    "party": [
+      {
+        "level": 52,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Gunk Shot",
+          "X-Scissor",
+          "Earthquake",
+          "Protect"
+        ]
+      },
+      {
+        "level": 51,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Giga Drain",
+          "Sludge Bomb",
+          "Shadow Ball",
+          "Synthesis"
+        ]
+      },
+      {
+        "level": 51,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Waterfall",
+          "Bounce",
+          "Dragon Rush",
+          "Crunch"
+        ]
+      },
+      {
+        "level": 50,
+        "form": null,
+        "isMega": false,
+        "heldItem": "Scolipite",
+        "knownMoves": [
+          "Poison Jab",
+          "Fire Fang",
+          "Leech Life",
+          "Toxic"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank D - Rust Syndicate organization member. Scolipede holds Scolipite (Mega Stone).",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankd.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-gwynn",
+    "name": "Gwynn",
+    "rank": "D",
+    "category": "Boss",
+    "faction": "Fist of Justice",
+    "battle_order": 8,
+    "party": [
+      {
+        "level": 43,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 44,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 45,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "Fist of Justice member during Rank D progression. Ghost-type specialist.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankd.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-c-jacinthe",
+    "name": "Jacinthe",
+    "rank": "C",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 9,
+    "party": [
+      {
+        "level": 59,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Moonblast",
+          "Air Slash",
+          "Mystical Fire",
+          "Protect"
+        ]
+      },
+      {
+        "level": 58,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Moonblast",
+          "Psychic",
+          "Mystical Fire",
+          "Calm Mind"
+        ]
+      },
+      {
+        "level": 58,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Freeze-Dry",
+          "Blizzard",
+          "Rock Blast",
+          "Protect"
+        ]
+      },
+      {
+        "level": 58,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Play Rough",
+          "Iron Head",
+          "Crunch",
+          "Fire Fang"
+        ]
+      },
+      {
+        "level": 57,
+        "form": null,
+        "isMega": false,
+        "heldItem": "Clefablite",
+        "knownMoves": [
+          "Moonblast",
+          "Stone Edge",
+          "Flash Cannon",
+          "Stealth Rock"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank C - SBC organization member. Clefable holds Clefablite (Mega Stone).",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankc.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-b-grisham",
+    "name": "Grisham",
+    "rank": "B",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": 10,
+    "party": [
+      {
+        "level": 63,
+        "form": "Mega X",
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Flare Blitz",
+          "Dragon Rush",
+          "Air Slash",
+          "Protect"
+        ]
+      },
+      {
+        "level": 62,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Draco Meteor",
+          "Aerial Ace",
+          "Earthquake",
+          "Fire Fang"
+        ]
+      },
+      {
+        "level": 62,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Stone Edge",
+          "Crunch",
+          "Earthquake",
+          "Ice Punch"
+        ]
+      },
+      {
+        "level": 61,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Overheat",
+          "Hyper Voice",
+          "Earth Power",
+          "Snarl"
+        ]
+      },
+      {
+        "level": 61,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Psyshock",
+          "Night Slash",
+          "Liquidation",
+          "Hypnosis"
+        ]
+      },
+      {
+        "level": 61,
+        "form": null,
+        "isMega": false,
+        "heldItem": "Charizardite X",
+        "knownMoves": [
+          "Brick Break",
+          "Crunch",
+          "Bullet Punch",
+          "Protect"
+        ]
+      }
+    ],
+    "rewards": [],
+    "notes": "Promotion Match trainer for Rank B - Team Flare Nouveau member. Charizard holds Charizardite X (Mega Stone).",
+    "sources": [
+      {
+        "url": "https://game8.co/games/Pokemon-Legends-Z-A/archives/559113",
+        "site": "game8",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankb.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-lebanne",
+    "name": "Lebanne",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "SBC",
+    "battle_order": 11,
+    "party": [
+      {
+        "level": 53,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 53,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 53,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 54,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Dragalgite",
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "SBC (Société Battle Club) member. First battle in Rank B tournament. Dragon-type specialist.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankb.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-canari",
+    "name": "Canari",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "DYN4MO",
+    "battle_order": 12,
+    "party": [
+      {
+        "level": 53,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 54,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Ampharosite",
+        "knownMoves": []
+      },
+      {
+        "level": 54,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 55,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Eelektrossite",
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "DYN4MO tournament battle in Rank B. Third encounter with Canari. Electric-type specialist with two Mega Evolution options.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankb.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankd.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingranke.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-ivor",
+    "name": "Ivor",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "Fist of Justice",
+    "battle_order": 13,
+    "party": [
+      {
+        "level": 53,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 54,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 54,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 55,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Falinksite",
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "Fist of Justice tournament battle in Rank B. Second encounter with Ivor. Fighting-type specialist.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankb.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankd.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-corbeau",
+    "name": "Corbeau",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "Rust Syndicate",
+    "battle_order": 14,
+    "party": [
+      {
+        "level": 54,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 55,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 55,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 56,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Scolipite",
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "Rust Syndicate boss. Promotion match for Rank C. Poison-type specialist. After victory, Corbeau visits player's hotel and provides generous tip that clears remaining debt.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankb.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      },
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankc.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-jacinthe",
+    "name": "Jacinthe",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "SBC",
+    "battle_order": 15,
+    "party": [
+      {
+        "level": 57,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 58,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 58,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 58,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 59,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Clefablite",
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "SBC (Société Battle Club) final boss in Rank B tournament. Fairy-type specialist with diverse coverage.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankb.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-a-urbain",
+    "name": "Urbain",
+    "rank": "A",
+    "category": "PromotionMatch",
+    "faction": null,
+    "battle_order": null,
+    "party": [],
+    "rewards": [],
+    "notes": "",
+    "sources": [
+      {
+        "url": "https://www.gamespot.com/gallery/pokemon-legends-za-royale-trainers/2900-7141/",
+        "site": "gamespot",
+        "scraped_at": "2025-10-21T00:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "boss-philippe",
+    "name": "Philippe",
+    "rank": null,
+    "category": "Boss",
+    "faction": "Rust Syndicate",
+    "battle_order": 1,
+    "party": [
+      {
+        "level": 46,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 46,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 47,
+        "form": null,
+        "isMega": true,
+        "heldItem": "Skarmorite",
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "Rust Syndicate member. Challenges player after grunts are defeated. Steel-type specialist team.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/mainmissions/arequestfromtherustsyndicate.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T12:00:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  },
+  {
+    "id": "rank-infinity-detective-emma",
+    "name": "Detective Emma",
+    "rank": null,
+    "category": "RewardMatch",
+    "faction": null,
+    "battle_order": 2,
+    "party": [
+      {
+        "level": 74,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 74,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 75,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 75,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 75,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": []
+      },
+      {
+        "level": 75,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": []
+      }
+    ],
+    "rewards": [],
+    "notes": "Reward Match trainer in Rank Infinity - Random encounter after Reward Match 20. Multiple Pokemon have Mega Evolution capability.",
+    "sources": [
+      {
+        "url": "https://www.serebii.net/legendsz-a/z-aroyale/rankinfinity.shtml",
+        "site": "serebii",
+        "scraped_at": "2025-10-21T13:04:00Z"
+      }
+    ],
+    "last_verified": "2025-10-21",
+    "version": "20251021"
+  }
+]

@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Search } from './pages/Search';
 import { PokemonDetail } from './pages/PokemonDetail';
 import { TypeChart } from './pages/TypeChart';
+import { Trainers } from './pages/Trainers';
 import { BottomNav } from './components/BottomNav';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Search />} />
           <Route path="/pokemon/:name" element={<PokemonDetail />} />
           <Route path="/types" element={<TypeChart />} />
+          <Route path="/trainers" element={<Trainers />} />
         </Routes>
       </div>
       <BottomNav />

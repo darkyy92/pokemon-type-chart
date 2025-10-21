@@ -1,0 +1,268 @@
+[
+  {
+    "id": "rank-z-zach-the-driver",
+    "name": "Zach the Driver",
+    "rank": "Z",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-z-zach",
+    "name": "Zach",
+    "rank": "Z",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-z-office-worker-jean",
+    "name": "Office Worker Jean",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-z-office-worker-erica",
+    "name": "Office Worker Erica",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-z-backpacker-daniel",
+    "name": "Backpacker Daniel",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-z-nell",
+    "name": "Nell",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-z-jogger-simon",
+    "name": "Jogger Simon",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-z-police-officer-emilie",
+    "name": "Police Officer Emilie",
+    "rank": "Z",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-y-yvon-the-worker",
+    "name": "Yvon the Worker",
+    "rank": "Y",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-y-office-worker-yvon",
+    "name": "Office Worker Yvon",
+    "rank": "Y",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-y-yvon",
+    "name": "Yvon",
+    "rank": "Y",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-y-hugo",
+    "name": "Hugo",
+    "rank": "Y",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-y-collector-roméo",
+    "name": "Collector Roméo",
+    "rank": "Y",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-x-xavi-the-grade-schooler",
+    "name": "Xavi the Grade-Schooler",
+    "rank": "X",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-x-xavi",
+    "name": "Xavi",
+    "rank": "X",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-w-rintaro",
+    "name": "Rintaro",
+    "rank": "W",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-v-waiter-rintaro",
+    "name": "Waiter Rintaro",
+    "rank": "V",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-v-vinnie",
+    "name": "Vinnie",
+    "rank": "V",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-v-backpacker-antoine",
+    "name": "Backpacker Antoine",
+    "rank": "V",
+    "category": "StandardTrainer",
+    "faction": null
+  },
+  {
+    "id": "rank-f-vinnie",
+    "name": "Vinnie",
+    "rank": "F",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-f-canari",
+    "name": "Canari",
+    "rank": "F",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "boss-naveen",
+    "name": "Naveen",
+    "rank": "E",
+    "category": "Boss",
+    "faction": "Team MZ"
+  },
+  {
+    "id": "boss-mani",
+    "name": "Mani",
+    "rank": "E",
+    "category": "Boss",
+    "faction": "DYN4MO"
+  },
+  {
+    "id": "boss-tarragon",
+    "name": "Tarragon",
+    "rank": "E",
+    "category": "Boss",
+    "faction": "DYN4MO"
+  },
+  {
+    "id": "rank-e-ivor",
+    "name": "Ivor",
+    "rank": "E",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "boss-taunie/urbain",
+    "name": "Taunie/Urbain",
+    "rank": "D",
+    "category": "Boss",
+    "faction": "Team MZ"
+  },
+  {
+    "id": "rank-d-corbeau",
+    "name": "Corbeau",
+    "rank": "D",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "boss-gwynn",
+    "name": "Gwynn",
+    "rank": "D",
+    "category": "Boss",
+    "faction": "Fist of Justice"
+  },
+  {
+    "id": "rank-c-jacinthe",
+    "name": "Jacinthe",
+    "rank": "C",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "rank-b-grisham",
+    "name": "Grisham",
+    "rank": "B",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "boss-lebanne",
+    "name": "Lebanne",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "SBC"
+  },
+  {
+    "id": "boss-canari",
+    "name": "Canari",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "DYN4MO"
+  },
+  {
+    "id": "boss-ivor",
+    "name": "Ivor",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "Fist of Justice"
+  },
+  {
+    "id": "boss-corbeau",
+    "name": "Corbeau",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "Rust Syndicate"
+  },
+  {
+    "id": "boss-jacinthe",
+    "name": "Jacinthe",
+    "rank": "B",
+    "category": "Boss",
+    "faction": "SBC"
+  },
+  {
+    "id": "rank-a-urbain",
+    "name": "Urbain",
+    "rank": "A",
+    "category": "PromotionMatch",
+    "faction": null
+  },
+  {
+    "id": "boss-philippe",
+    "name": "Philippe",
+    "rank": null,
+    "category": "Boss",
+    "faction": "Rust Syndicate"
+  },
+  {
+    "id": "rank-infinity-detective-emma",
+    "name": "Detective Emma",
+    "rank": null,
+    "category": "RewardMatch",
+    "faction": null
+  }
+]
