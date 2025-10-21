@@ -942,21 +942,39 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Poison Jab",
+          "Pin Missile",
+          "Sticky Web",
+          "Shadow Sneak"
+        ],
+        "species": "Ariados"
       },
       {
         "level": 33,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Shadow Claw",
+          "Night Slash",
+          "Confuse Ray",
+          "Take Down"
+        ],
+        "species": "Sableye"
       },
       {
         "level": 33,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Brick Break",
+          "Rock Tomb",
+          "Power-Up Punch",
+          "Headbutt"
+        ],
+        "species": "Scraggy"
       }
     ],
     "rewards": [],
@@ -984,21 +1002,39 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Parabolic Charge",
+          "Breaking Swipe",
+          "Bulldoze",
+          "Swift"
+        ],
+        "species": "Helioptile"
       },
       {
         "level": 34,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Spark",
+          "Wing Attack",
+          "Charge",
+          "Nuzzle"
+        ],
+        "species": "Emolga"
       },
       {
         "level": 35,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Thunderbolt",
+          "Quick Attack",
+          "Brick Break",
+          "Spark"
+        ],
+        "species": "Raichu"
       }
     ],
     "rewards": [],
@@ -1026,21 +1062,39 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Heavy Slam",
+          "Amnesia",
+          "Crunch",
+          "Stealth Rock"
+        ],
+        "species": "Hippowdon"
       },
       {
         "level": 36,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Swords Dance",
+          "Take Down",
+          "Bounce",
+          "Bulldoze"
+        ],
+        "species": "Diggersby"
       },
       {
         "level": 37,
         "form": null,
         "isMega": true,
         "heldItem": "Excadrite",
-        "knownMoves": []
+        "knownMoves": [
+          "Swords Dance",
+          "Dig",
+          "Rock Slide",
+          "X-Scissor"
+        ],
+        "species": "Excadrill"
       }
     ],
     "rewards": [],
@@ -1147,15 +1201,63 @@
     "battle_order": 6,
     "party": [
       {
-        "level": "25-26",
+        "level": 25,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Giga Drain",
+          "Razor Leaf",
+          "Body Slam",
+          "Disarming Voice"
+        ],
+        "species": "Bayleef",
+        "condition": "If player chose Grass starter"
+      },
+      {
+        "level": 25,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Aqua Jet",
+          "Tackle",
+          "Slash",
+          "Bite"
+        ],
+        "species": "Croconaw",
+        "condition": "If player chose Grass or Fire starter"
+      },
+      {
+        "level": 25,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Power-Up Punch",
+          "Rollout",
+          "Flame Wheel",
+          "Tackle"
+        ],
+        "species": "Pignite",
+        "condition": "If player chose Fire or Water starter"
+      },
+      {
+        "level": 26,
+        "form": null,
+        "isMega": false,
+        "heldItem": "Manectite",
+        "knownMoves": [
+          "Thunder Fang",
+          "Spark",
+          "Bite",
+          "Fire Fang"
+        ],
+        "species": "Manectric"
       }
     ],
     "rewards": [],
-    "notes": "Team MZ rematch. Team varies: Option 1: Bayleef (25), Croconaw (25), Manectric (26). Option 2: Croconaw (25), Pignite (25), Manectric (26). Option 3: Pignite (25), Bayleef (25), Manectric (26).",
+    "notes": "Team MZ rematch. Team varies based on player's starter choice: always has 2 of the 3 starters (countering player's choice) + Manectric. Party includes all 4 possible Pokemon with conditions.",
     "sources": [
       {
         "url": "https://www.serebii.net/legendsz-a/mainmissions/reachingrankd.shtml",
@@ -1262,21 +1364,39 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Shadow Sneak",
+          "Shadow Claw",
+          "Knock Off",
+          "Heal Block"
+        ],
+        "species": "Banette"
       },
       {
         "level": 44,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Trick-or-Treat",
+          "Shadow Claw",
+          "Bullet Seed",
+          "Brutal Swing"
+        ],
+        "species": "Gourgeist"
       },
       {
         "level": 45,
         "form": null,
         "isMega": false,
-        "heldItem": null,
-        "knownMoves": []
+        "heldItem": "Chandelurite",
+        "knownMoves": [
+          "Flamethrower",
+          "Fire Spin",
+          "Shadow Ball",
+          "Protect"
+        ],
+        "species": "Chandelure"
       }
     ],
     "rewards": [],
@@ -1509,28 +1629,52 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Hurricane",
+          "Super Fang",
+          "Dragon Pulse",
+          "Air Slash"
+        ],
+        "species": "Noivern"
       },
       {
         "level": 53,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Earthquake",
+          "Breaking Swipe",
+          "Rock Slide",
+          "Crunch"
+        ],
+        "species": "Tyrantrum"
       },
       {
         "level": 53,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Earthquake",
+          "Swords Dance",
+          "Dragon Claw",
+          "Iron Head"
+        ],
+        "species": "Garchomp"
       },
       {
         "level": 54,
         "form": null,
         "isMega": true,
         "heldItem": "Dragalgite",
-        "knownMoves": []
+        "knownMoves": [
+          "Sludge Bomb",
+          "Dragon Pulse",
+          "Hydro Pump",
+          "Protect"
+        ],
+        "species": "Dragalge"
       }
     ],
     "rewards": [],
@@ -1558,28 +1702,52 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
-      },
-      {
-        "level": 54,
-        "form": null,
-        "isMega": true,
-        "heldItem": "Ampharosite",
-        "knownMoves": []
+        "knownMoves": [
+          "Thunder Wave",
+          "Parabolic Charge",
+          "Thunderbolt",
+          "Bulldoze"
+        ],
+        "species": "Heliolisk"
       },
       {
         "level": 54,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Dazzling Gleam",
+          "Thunder",
+          "Power Gem",
+          "Ice Punch"
+        ],
+        "species": "Ampharos"
+      },
+      {
+        "level": 54,
+        "form": null,
+        "isMega": false,
+        "heldItem": null,
+        "knownMoves": [
+          "Discharge",
+          "Thunder Shock",
+          "Stealth Rock",
+          "Mud Shot"
+        ],
+        "species": "Stunfisk"
       },
       {
         "level": 55,
         "form": null,
         "isMega": true,
         "heldItem": "Eelektrossite",
-        "knownMoves": []
+        "knownMoves": [
+          "Liquidation",
+          "Thunderbolt",
+          "Zap Cannon",
+          "Giga Drain"
+        ],
+        "species": "Eelektross"
       }
     ],
     "rewards": [],
@@ -1617,28 +1785,52 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Rock Blast",
+          "Megahorn",
+          "Aerial Ace",
+          "Brick Break"
+        ],
+        "species": "Heracross"
       },
       {
         "level": 54,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Zen Headbutt",
+          "Rock Smash",
+          "Protect",
+          "Ice Punch"
+        ],
+        "species": "Medicham"
       },
       {
         "level": 54,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Bulldoze",
+          "Brick Break",
+          "Brutal Swing",
+          "Bulk Up"
+        ],
+        "species": "Machamp"
       },
       {
         "level": 55,
         "form": null,
         "isMega": true,
         "heldItem": "Falinksite",
-        "knownMoves": []
+        "knownMoves": [
+          "Iron Head",
+          "Close Combat",
+          "Rock Slide",
+          "No Retreat"
+        ],
+        "species": "Falinks"
       }
     ],
     "rewards": [],
@@ -1671,28 +1863,52 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Poison Jab",
+          "Fire Fang",
+          "Toxic",
+          "Leech Life"
+        ],
+        "species": "Arbok"
       },
       {
         "level": 55,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Crunch",
+          "Waterfall",
+          "Dragon Rush",
+          "Bounce"
+        ],
+        "species": "Gyarados"
       },
       {
         "level": 55,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Giga Drain",
+          "Synthesis",
+          "Sludge Bomb",
+          "Shadow Ball"
+        ],
+        "species": "Roserade"
       },
       {
         "level": 56,
         "form": null,
         "isMega": true,
         "heldItem": "Scolipite",
-        "knownMoves": []
+        "knownMoves": [
+          "Gunk Shot",
+          "Protect",
+          "X-Scissor",
+          "Earthquake"
+        ],
+        "species": "Scolipede"
       }
     ],
     "rewards": [],
@@ -1725,35 +1941,65 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Stealth Rock",
+          "Stone Edge",
+          "Moonblast",
+          "Flash Cannon"
+        ],
+        "species": "Carbink"
       },
       {
         "level": 58,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Play Rough",
+          "Iron Head",
+          "Crunch",
+          "Fire Fang"
+        ],
+        "species": "Mawile"
       },
       {
         "level": 58,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Blizzard",
+          "Freeze-Dry",
+          "Rock Blast",
+          "Protect"
+        ],
+        "species": "Aurorus"
       },
       {
         "level": 58,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Moonblast",
+          "Mystical Fire",
+          "Psychic",
+          "Calm Mind"
+        ],
+        "species": "Gardevoir"
       },
       {
         "level": 59,
         "form": null,
         "isMega": true,
         "heldItem": "Clefablite",
-        "knownMoves": []
+        "knownMoves": [
+          "Air Slash",
+          "Moonblast",
+          "Mystical Fire",
+          "Protect"
+        ],
+        "species": "Clefable"
       }
     ],
     "rewards": [],
@@ -1850,21 +2096,39 @@
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Heavy Slam",
+          "Stealth Rock",
+          "Crunch",
+          "Rock Slide"
+        ],
+        "species": "Steelix"
       },
       {
         "level": 46,
         "form": null,
         "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Air Slash",
+          "Swords Dance",
+          "X-Scissor",
+          "Bullet Punch"
+        ],
+        "species": "Scizor"
       },
       {
         "level": 47,
         "form": null,
         "isMega": true,
         "heldItem": "Skarmorite",
-        "knownMoves": []
+        "knownMoves": [
+          "Drill Run",
+          "Night Slash",
+          "Steel Wing",
+          "Air Slash"
+        ],
+        "species": "Skarmory"
       }
     ],
     "rewards": [],
@@ -1890,44 +2154,80 @@
       {
         "level": 74,
         "form": null,
-        "isMega": true,
+        "isMega": false,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Thunder",
+          "Power Gem",
+          "Dragon Pulse",
+          "Light Screen"
+        ],
+        "species": "Ampharos"
       },
       {
         "level": 74,
         "form": null,
         "isMega": true,
         "heldItem": null,
-        "knownMoves": []
+        "knownMoves": [
+          "Play Rough",
+          "Dynamic Punch",
+          "Crunch",
+          "Iron Head"
+        ],
+        "species": "Mawile"
+      },
+      {
+        "level": 74,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Fire Punch",
+          "Ice Punch",
+          "Thunder Punch",
+          "Power-Up Punch"
+        ],
+        "species": "Lopunny"
+      },
+      {
+        "level": 74,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Ice Punch",
+          "Leech Seed",
+          "Leaf Storm",
+          "Earthquake"
+        ],
+        "species": "Abomasnow"
+      },
+      {
+        "level": 74,
+        "form": null,
+        "isMega": true,
+        "heldItem": null,
+        "knownMoves": [
+          "Bullet Punch",
+          "Extreme Speed",
+          "Power-Up Punch",
+          "Stone Edge"
+        ],
+        "species": "Lucario"
       },
       {
         "level": 75,
         "form": null,
         "isMega": true,
-        "heldItem": null,
-        "knownMoves": []
-      },
-      {
-        "level": 75,
-        "form": null,
-        "isMega": true,
-        "heldItem": null,
-        "knownMoves": []
-      },
-      {
-        "level": 75,
-        "form": null,
-        "isMega": true,
-        "heldItem": null,
-        "knownMoves": []
-      },
-      {
-        "level": 75,
-        "form": null,
-        "isMega": false,
-        "heldItem": null,
-        "knownMoves": []
+        "heldItem": "Malamarite",
+        "knownMoves": [
+          "Poison Jab",
+          "Night Slash",
+          "Psycho Cut",
+          "Slash"
+        ],
+        "species": "Malamar"
       }
     ],
     "rewards": [],
