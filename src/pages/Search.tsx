@@ -44,32 +44,32 @@ export function Search() {
       </div>
 
       {/* Pokemon Grid */}
-      <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 max-w-7xl mx-auto">
         {filteredPokemon.map((pokemon) => (
           <button
             key={pokemon.id}
             onClick={() => handleSelectPokemon(pokemon)}
             className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl
                        transition-all duration-300 hover:scale-105 active:scale-95
-                       p-4 flex flex-col items-center gap-3"
+                       p-4 flex flex-col items-center gap-3 h-full min-h-[280px]"
           >
             {/* Sprite */}
-            <div className="w-full aspect-square flex items-center justify-center">
+            <div className="h-40 w-40 flex items-center justify-center flex-shrink-0 mx-auto">
               <img
                 src={getPokemonSpriteUrl(pokemon)}
                 alt={pokemon.name}
-                className="w-full h-full object-contain"
+                className="max-w-full max-h-full object-contain"
                 loading="lazy"
               />
             </div>
 
             {/* Name */}
-            <h3 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-100 text-center line-clamp-1">
+            <h3 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-100 text-center line-clamp-1 w-full px-1">
               {pokemon.name}
             </h3>
 
             {/* Types */}
-            <div className="flex gap-1 flex-wrap justify-center">
+            <div className="flex gap-1 flex-wrap justify-center min-h-[28px]">
               {pokemon.types.map((type) => (
                 <TypeBadge key={type} type={type} size="sm" />
               ))}
