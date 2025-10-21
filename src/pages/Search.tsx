@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Fuse from 'fuse.js';
 import { pokemonDatabase } from '../data/pokemon';
 import { Pokemon } from '../types';
 import { TypeBadge } from '../components/TypeBadge';
-import { getPokemonSpriteUrl } from '../utils/typeCalculator';
+import {
+  getPokemonSpriteUrl,
+  calculateDefenseMatchups,
+  groupMatchupsByCategory,
+  getTypeColor,
+} from '../utils/typeCalculator';
 
 const fuse = new Fuse(pokemonDatabase, {
   keys: ['name'],
@@ -15,7 +19,8 @@ const fuse = new Fuse(pokemonDatabase, {
 export function Search() {
   const [query, setQuery] = useState('');
   const [filteredPokemon, setFilteredPokemon] = useState<Pokemon[]>(pokemonDatabase);
-  const navigate = useNavigate();
+  const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   // Filter Pokemon as user types
   useEffect(() => {
@@ -29,7 +34,13 @@ export function Search() {
   }, [query]);
 
   const handleSelectPokemon = (pokemon: Pokemon) => {
-    navigate(`/pokemon/${pokemon.name.toLowerCase()}`);
+    setSelectedPokemon(pokemon);
+    setIsDrawerOpen(true);
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+    setTimeout(() => setSelectedPokemon(null), 300);
   };
 
   return (
@@ -147,6 +158,129 @@ export function Search() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Detail Drawer Overlay */}
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity"
+          onClick={closeDrawer}
+        />
+      )}
+
+      {/* Detail Drawer */}
+      <div
+        className={`fixed top-0 right-0 h-full w-full md:w-[500px] bg-white dark:bg-gray-800 shadow-2xl z-50 transform transition-transform duration-300 overflow-y-auto ${
+          isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        {selectedPokemon && (
+          <div className="p-6 pb-24">
+            {/* Close Button */}
+            <button
+              onClick={closeDrawer}
+              className="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              aria-label="Close"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Pokemon Header */}
+            <div className="mb-6 pr-8">
+              <div className="flex items-start gap-4 mb-4">
+                <img
+                  src={getPokemonSpriteUrl(selectedPokemon)}
+                  alt={selectedPokemon.name}
+                  className="w-20 h-20 object-contain flex-shrink-0"
+                />
+                <div className="flex-1">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+                    {selectedPokemon.name}
+                  </h2>
+                  <div className="flex gap-2 mt-2">
+                    {selectedPokemon.types.map((type) => (
+                      <TypeBadge key={type} type={type} size="lg" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {(() => {
+              const matchups = calculateDefenseMatchups(selectedPokemon.types[0], selectedPokemon.types[1]);
+              const grouped = groupMatchupsByCategory(matchups);
+              const useTheseTypes = [...grouped.quadWeak, ...grouped.doubleWeak];
+              const avoidTheseTypes = [...grouped.immune, ...grouped.quadResist, ...grouped.doubleResist];
+
+              return (
+                <>
+                  {/* USE THESE TYPES */}
+                  {useTheseTypes.length > 0 && (
+                    <div className="bg-green-600 dark:bg-green-700 rounded-xl shadow-lg p-4 mb-4">
+                      <h3 className="text-lg font-bold text-white mb-3">USE THESE TYPES</h3>
+                      <div className="grid grid-cols-2 gap-2">
+                        {useTheseTypes.map(({ type, multiplier }) => {
+                          const textColor = multiplier === 4 ? 'text-yellow-500' : 'text-green-600';
+                          return (
+                            <div
+                              key={type}
+                              className="rounded-lg overflow-hidden shadow-md p-2 flex flex-col items-center justify-center gap-1 min-h-14"
+                              style={{ backgroundColor: getTypeColor(type) }}
+                            >
+                              <span className="text-sm md:text-base font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
+                                {type}
+                              </span>
+                              <div className={`bg-white font-extrabold text-sm px-2 py-0.5 rounded-full ${textColor}`}>
+                                {multiplier}×
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* AVOID THESE TYPES */}
+                  {avoidTheseTypes.length > 0 && (
+                    <div className="bg-red-600 dark:bg-red-700 rounded-xl shadow-lg p-4">
+                      <h3 className="text-lg font-bold text-white mb-3">AVOID THESE TYPES</h3>
+                      <div className="grid grid-cols-2 gap-2">
+                        {avoidTheseTypes.map(({ type, multiplier }) => {
+                          const getTextColor = () => {
+                            if (multiplier === 0) return 'text-gray-900';
+                            if (multiplier === 0.25) return 'text-red-700';
+                            return 'text-orange-500';
+                          };
+                          return (
+                            <div
+                              key={type}
+                              className="rounded-lg overflow-hidden shadow-md p-2 flex flex-col items-center justify-center gap-1 min-h-14"
+                              style={{ backgroundColor: getTypeColor(type) }}
+                            >
+                              <span className="text-sm md:text-base font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
+                                {type}
+                              </span>
+                              <div className={`bg-white font-extrabold text-sm px-2 py-0.5 rounded-full ${getTextColor()}`}>
+                                {multiplier}×
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
+          </div>
+        )}
       </div>
     </div>
   );
