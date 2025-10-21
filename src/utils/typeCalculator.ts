@@ -60,11 +60,44 @@ export function groupMatchupsByCategory(matchups: CalculatedMatchup[]) {
 }
 
 /**
- * Get Pokemon sprite URL from PokeAPI
- * All Pokemon (including Megas) use their ID directly
+ * Get Pokemon sprite URL from pokemondb.net
+ * Regular Pokemon: artwork/avif/{name}.avif
+ * Official Megas (Gen 6-7, ID 10033-10090): artwork/avif/{name}-mega.avif
+ * Z-A Megas (new, ID outside range): artwork/tmp/{name}-mega.jpg
  */
 export function getPokemonSpriteUrl(pokemon: { id: number; name: string }): string {
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
+  const isMega = pokemon.name.startsWith('Mega ');
+
+  if (isMega) {
+    // Convert "Mega Feraligatr" → "feraligatr-mega"
+    // Convert "Mega Charizard X" → "charizard-mega-x"
+    const namePart = pokemon.name.replace('Mega ', '').toLowerCase();
+    const parts = namePart.split(' ');
+
+    let megaName: string;
+    if (parts.length === 1) {
+      // Simple mega: "Mega Feraligatr" → "feraligatr-mega"
+      megaName = `${parts[0]}-mega`;
+    } else {
+      // Form variant: "Mega Charizard X" → "charizard-mega-x"
+      const baseName = parts[0];
+      const form = parts[1].toLowerCase();
+      megaName = `${baseName}-mega-${form}`;
+    }
+
+    // Official Megas from Gen 6-7 games use avif format
+    // Z-A exclusive Megas use tmp jpg format
+    const isOfficialMega = pokemon.id >= 10033 && pokemon.id <= 10090;
+    if (isOfficialMega) {
+      return `https://img.pokemondb.net/artwork/avif/${megaName}.avif`;
+    } else {
+      return `https://img.pokemondb.net/artwork/tmp/${megaName}.jpg`;
+    }
+  }
+
+  // Regular Pokemon: "Feraligatr" → "feraligatr.avif"
+  const name = pokemon.name.toLowerCase();
+  return `https://img.pokemondb.net/artwork/avif/${name}.avif`;
 }
 
 /**
