@@ -24,7 +24,7 @@ export function TypeChart() {
         {/* Back Button */}
         <button
           onClick={() => navigate('/')}
-          className="mb-4 px-4 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-colors flex items-center gap-2"
+          className="mb-4 px-4 py-2 bg-white/20 dark:bg-white/10 hover:bg-white/30 dark:hover:bg-white/20 text-white rounded-lg font-semibold transition-colors flex items-center gap-2"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -32,7 +32,7 @@ export function TypeChart() {
           Back to Search
         </button>
 
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden">
           {/* Header */}
           <div className="text-center px-8 pt-8 pb-4">
             <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3">
@@ -41,14 +41,14 @@ export function TypeChart() {
           </div>
 
           {/* Tab Navigation */}
-          <div className="sticky top-0 z-10 bg-white shadow-md">
+          <div className="sticky top-0 z-10 bg-white dark:bg-gray-800 shadow-md">
             <div className="flex max-w-2xl mx-auto">
               <button
                 onClick={() => setActiveTab('offense')}
                 className={`flex-1 py-5 px-6 text-lg md:text-xl font-extrabold uppercase tracking-wide transition-all border-b-4 ${
                   activeTab === 'offense'
-                    ? 'bg-white text-red-700 border-red-500'
-                    : 'bg-gray-50 text-gray-500 border-transparent hover:bg-red-50 hover:text-red-600'
+                    ? 'bg-white dark:bg-gray-800 text-red-700 dark:text-red-400 border-red-500'
+                    : 'bg-gray-50 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border-transparent hover:bg-red-50 dark:hover:bg-gray-600 hover:text-red-600 dark:hover:text-red-400'
                 }`}
               >
                 Attack
@@ -57,8 +57,8 @@ export function TypeChart() {
                 onClick={() => setActiveTab('defense')}
                 className={`flex-1 py-5 px-6 text-lg md:text-xl font-extrabold uppercase tracking-wide transition-all border-b-4 ${
                   activeTab === 'defense'
-                    ? 'bg-white text-blue-700 border-blue-500'
-                    : 'bg-gray-50 text-gray-500 border-transparent hover:bg-blue-50 hover:text-blue-600'
+                    ? 'bg-white dark:bg-gray-800 text-blue-700 dark:text-blue-400 border-blue-500'
+                    : 'bg-gray-50 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border-transparent hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-blue-400'
                 }`}
               >
                 Defense
@@ -73,11 +73,11 @@ export function TypeChart() {
           </div>
 
           {/* Footer */}
-          <div className="text-center mt-10 mb-8 px-6 py-6 mx-6 bg-gray-50 rounded-2xl">
-            <p className="text-sm text-gray-600 mb-2">
+          <div className="text-center mt-10 mb-8 px-6 py-6 mx-6 bg-gray-50 dark:bg-gray-700 rounded-2xl">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
               <strong>Note:</strong> This chart shows all type interactions for Pokemon Legends Z-A (2025)
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-400 dark:text-gray-500">
               Includes same-type matchups (e.g., Grass vs Grass = 0.5×) and all immunity interactions
             </p>
           </div>
@@ -117,7 +117,7 @@ function TypeCard({ type, mode }: TypeCardProps) {
   const typeColor = getTypeColor(type);
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
+    <div className="bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
       {/* Card Header */}
       <div
         className="py-6 px-6 text-white text-center"
@@ -138,14 +138,14 @@ function TypeCard({ type, mode }: TypeCardProps) {
               color="bg-green-500"
               symbol="2×"
             />
-            <div className="border-t border-gray-200" />
+            <div className="border-t border-gray-200 dark:border-gray-600" />
             <EffectivenessSection
               title="Not very effective against:"
               types={(matchups as any).notEffective}
               color="bg-orange-500"
               symbol="½×"
             />
-            <div className="border-t border-gray-200" />
+            <div className="border-t border-gray-200 dark:border-gray-600" />
             <EffectivenessSection
               title="No effect against:"
               types={(matchups as any).noEffect}
@@ -161,14 +161,14 @@ function TypeCard({ type, mode }: TypeCardProps) {
               color="bg-green-500"
               symbol="2×"
             />
-            <div className="border-t border-gray-200" />
+            <div className="border-t border-gray-200 dark:border-gray-600" />
             <EffectivenessSection
               title="Resistant against:"
               types={(matchups as any).resistant}
               color="bg-orange-500"
               symbol="½×"
             />
-            <div className="border-t border-gray-200" />
+            <div className="border-t border-gray-200 dark:border-gray-600" />
             <EffectivenessSection
               title="Immune to:"
               types={(matchups as any).immune}
@@ -196,7 +196,7 @@ function EffectivenessSection({ title, types, color, symbol }: EffectivenessSect
         <div className={`${color} text-white w-9 h-9 rounded-lg flex items-center justify-center text-base font-extrabold`}>
           {symbol}
         </div>
-        <span className="text-base font-extrabold text-gray-800">{title}</span>
+        <span className="text-base font-extrabold text-gray-800 dark:text-gray-200">{title}</span>
       </div>
       <div className="flex flex-wrap gap-2">
         {types.length > 0 ? (
@@ -204,7 +204,7 @@ function EffectivenessSection({ title, types, color, symbol }: EffectivenessSect
             <TypeBadge key={type} type={type} size="md" />
           ))
         ) : (
-          <span className="text-gray-400 text-base italic ml-1">—</span>
+          <span className="text-gray-400 dark:text-gray-500 text-base italic ml-1">—</span>
         )}
       </div>
     </div>
