@@ -104,7 +104,7 @@ export function Search() {
       {/* Floating Search Bar */}
       <div className="fixed bottom-20 left-0 right-0 px-4 pb-4 pointer-events-none">
         <div className="max-w-2xl mx-auto pointer-events-auto">
-          <div className="bg-white dark:bg-gray-800 rounded-full shadow-2xl border-2 border-gray-200 dark:border-gray-700">
+          <div className="bg-blue-50 dark:bg-gray-700 rounded-full shadow-lg border-2 border-blue-300 dark:border-blue-500">
             <div className="flex items-center px-6 py-4 gap-3">
               {/* Search Icon */}
               <svg
