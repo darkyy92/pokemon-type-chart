@@ -234,6 +234,11 @@ export function Search() {
                               className="rounded-lg overflow-hidden shadow-md p-2 flex flex-col items-center justify-center gap-1 min-h-14"
                               style={{ backgroundColor: getTypeColor(type) }}
                             >
+                              <img
+                                src={`/pokemon-type-chart/icons/${type}.svg`}
+                                alt={type}
+                                className="w-8 h-8"
+                              />
                               <span className="text-sm md:text-base font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                                 {type}
                               </span>
@@ -264,6 +269,11 @@ export function Search() {
                               className="rounded-lg overflow-hidden shadow-md p-2 flex flex-col items-center justify-center gap-1 min-h-14"
                               style={{ backgroundColor: getTypeColor(type) }}
                             >
+                              <img
+                                src={`/pokemon-type-chart/icons/${type}.svg`}
+                                alt={type}
+                                className="w-8 h-8"
+                              />
                               <span className="text-sm md:text-base font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                                 {type}
                               </span>
