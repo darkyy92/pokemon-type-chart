@@ -1,10 +1,13 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Fuse from 'fuse.js';
-import { TrainerEntry, TrainerIndex, Pokemon } from '../types';
+import { TrainerEntry, TrainerIndex, Pokemon, PokemonType } from '../types';
 import { TrainerCard } from '../components/TrainerCard';
 import { RankBadge } from '../components/RankBadge';
+import { TypeBadge } from '../components/TypeBadge';
 import { pokemonDatabase } from '../data/pokemon';
+import { getTypeColor } from '../utils/typeCalculator';
+import { prefetchMoveTypes } from '../utils/moveTypeHelper';
 
 export function Trainers() {
   const navigate = useNavigate();
@@ -14,6 +17,7 @@ export function Trainers() {
   const [selectedTrainer, setSelectedTrainer] = useState<TrainerEntry | null>(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [moveTypes, setMoveTypes] = useState<Map<string, PokemonType | null>>(new Map());
 
   // Load trainers index on mount
   useEffect(() => {
@@ -73,6 +77,25 @@ export function Trainers() {
     setIsDrawerOpen(false);
     setTimeout(() => setSelectedTrainer(null), 300);
   };
+
+  // Prefetch move types when trainer is selected
+  useEffect(() => {
+    if (!selectedTrainer) return;
+
+    const allMoves: string[] = [];
+    selectedTrainer.party.forEach((pokemon) => {
+      if (pokemon.knownMoves) {
+        allMoves.push(...pokemon.knownMoves);
+      }
+    });
+
+    // Fetch move types in background
+    if (allMoves.length > 0) {
+      prefetchMoveTypes(allMoves).then((types) => {
+        setMoveTypes(types);
+      });
+    }
+  }, [selectedTrainer]);
 
   // Get Pokemon sprite URL
   const getPokemonSprite = (species: string): string => {
@@ -313,9 +336,17 @@ export function Trainers() {
                                   )}
                                 </h4>
                                 {pokemon.level && (
-                                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
                                     Level {pokemon.level}
                                   </p>
+                                )}
+                                {/* Pokemon Types */}
+                                {pokemonData && pokemonData.types && (
+                                  <div className="flex gap-1.5 mb-1">
+                                    {pokemonData.types.map((type) => (
+                                      <TypeBadge key={type} type={type} size="sm" />
+                                    ))}
+                                  </div>
                                 )}
                               </div>
 
@@ -350,14 +381,32 @@ export function Trainers() {
                                   Known Moves:
                                 </p>
                                 <div className="flex flex-wrap gap-1.5">
-                                  {pokemon.knownMoves.map((move, moveIdx) => (
-                                    <span
-                                      key={moveIdx}
-                                      className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 font-medium"
-                                    >
-                                      {move}
-                                    </span>
-                                  ))}
+                                  {pokemon.knownMoves.map((move, moveIdx) => {
+                                    const moveType = moveTypes.get(move);
+                                    const hasType = moveType !== null && moveType !== undefined;
+
+                                    return hasType ? (
+                                      <div
+                                        key={moveIdx}
+                                        className="text-xs px-2 py-1 rounded-md font-medium text-white flex items-center gap-1.5"
+                                        style={{ backgroundColor: getTypeColor(moveType) }}
+                                      >
+                                        <img
+                                          src={`/pokemon-type-chart/icons/${moveType}.svg`}
+                                          alt={moveType}
+                                          className="w-4 h-4"
+                                        />
+                                        <span>{move}</span>
+                                      </div>
+                                    ) : (
+                                      <span
+                                        key={moveIdx}
+                                        className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 font-medium"
+                                      >
+                                        {move}
+                                      </span>
+                                    );
+                                  })}
                                 </div>
                               </div>
                             )}

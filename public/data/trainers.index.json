@@ -1,14 +1,7 @@
 [
   {
-    "id": "rank-z-zach-the-driver",
-    "name": "Zach the Driver",
-    "rank": "Z",
-    "category": "PromotionMatch",
-    "faction": null
-  },
-  {
     "id": "rank-z-zach",
-    "name": "Zach",
+    "name": "Driver Zach",
     "rank": "Z",
     "category": "PromotionMatch",
     "faction": null
@@ -56,13 +49,6 @@
     "faction": null
   },
   {
-    "id": "rank-y-yvon-the-worker",
-    "name": "Yvon the Worker",
-    "rank": "Y",
-    "category": "PromotionMatch",
-    "faction": null
-  },
-  {
     "id": "rank-y-office-worker-yvon",
     "name": "Office Worker Yvon",
     "rank": "Y",
@@ -88,13 +74,6 @@
     "name": "Collector Roméo",
     "rank": "Y",
     "category": "StandardTrainer",
-    "faction": null
-  },
-  {
-    "id": "rank-x-xavi-the-grade-schooler",
-    "name": "Xavi the Grade-Schooler",
-    "rank": "X",
-    "category": "PromotionMatch",
     "faction": null
   },
   {
@@ -130,13 +109,6 @@
     "name": "Backpacker Antoine",
     "rank": "V",
     "category": "StandardTrainer",
-    "faction": null
-  },
-  {
-    "id": "rank-f-vinnie",
-    "name": "Vinnie",
-    "rank": "F",
-    "category": "PromotionMatch",
     "faction": null
   },
   {
