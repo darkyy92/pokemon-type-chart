@@ -231,18 +231,18 @@ export function Search() {
                           return (
                             <div
                               key={type}
-                              className="rounded-lg overflow-hidden shadow-md p-2 flex flex-col items-center justify-center gap-1 min-h-14"
+                              className="rounded-xl overflow-hidden shadow-lg p-2 flex flex-col items-center gap-2"
                               style={{ backgroundColor: getTypeColor(type) }}
                             >
                               <img
                                 src={`/pokemon-type-chart/icons/${type}.svg`}
                                 alt={type}
-                                className="w-8 h-8"
+                                className="w-12 h-12"
                               />
-                              <span className="text-sm md:text-base font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
+                              <span className="text-base font-bold text-white capitalize text-center leading-tight" style={{ textShadow: '1px 1px 0 #000' }}>
                                 {type}
                               </span>
-                              <div className={`bg-white font-extrabold text-sm px-2 py-0.5 rounded-full ${textColor}`}>
+                              <div className={`bg-white font-extrabold text-base px-3 py-1 rounded-full ${textColor}`}>
                                 {multiplier}×
                               </div>
                             </div>
@@ -266,18 +266,18 @@ export function Search() {
                           return (
                             <div
                               key={type}
-                              className="rounded-lg overflow-hidden shadow-md p-2 flex flex-col items-center justify-center gap-1 min-h-14"
+                              className="rounded-xl overflow-hidden shadow-lg p-2 flex flex-col items-center gap-2"
                               style={{ backgroundColor: getTypeColor(type) }}
                             >
                               <img
                                 src={`/pokemon-type-chart/icons/${type}.svg`}
                                 alt={type}
-                                className="w-8 h-8"
+                                className="w-12 h-12"
                               />
-                              <span className="text-sm md:text-base font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
+                              <span className="text-base font-bold text-white capitalize text-center leading-tight" style={{ textShadow: '1px 1px 0 #000' }}>
                                 {type}
                               </span>
-                              <div className={`bg-white font-extrabold text-sm px-2 py-0.5 rounded-full ${getTextColor()}`}>
+                              <div className={`bg-white font-extrabold text-base px-3 py-1 rounded-full ${getTextColor()}`}>
                                 {multiplier}×
                               </div>
                             </div>
