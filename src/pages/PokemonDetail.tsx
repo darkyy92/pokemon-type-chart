@@ -78,8 +78,8 @@ export function PokemonDetail() {
 
         {/* USE THESE TYPES - Green, Prominent */}
         {useTheseTypes.length > 0 && (
-          <div className="bg-green-600 dark:bg-green-700 rounded-2xl shadow-2xl p-6 mb-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-center gap-2">
+          <div className="border-4 border-green-600 dark:border-green-700 rounded-2xl shadow-2xl p-6 mb-4" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(22,163,74,0.08) 5px, rgba(22,163,74,0.08) 6px)', backgroundColor: '#ffffff' }}>
+            <h2 className="text-2xl md:text-3xl font-bold text-green-600 dark:text-green-400 mb-4 flex items-center gap-2">
               USE THESE TYPES
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -95,6 +95,7 @@ export function PokemonDetail() {
                       src={`/pokemon-type-chart/icons/${type}.svg`}
                       alt={type}
                       className="w-12 h-12"
+                      style={{ filter: 'drop-shadow(1px 1px 0 #000)' }}
                     />
                     <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}
@@ -111,8 +112,8 @@ export function PokemonDetail() {
 
         {/* AVOID THESE TYPES - Red, Warning */}
         {avoidTheseTypes.length > 0 && (
-          <div className="bg-red-600 dark:bg-red-700 rounded-2xl shadow-2xl p-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-center gap-2">
+          <div className="border-4 border-red-600 dark:border-red-700 rounded-2xl shadow-2xl p-6" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(220,38,38,0.08) 5px, rgba(220,38,38,0.08) 6px)', backgroundColor: '#ffffff' }}>
+            <h2 className="text-2xl md:text-3xl font-bold text-red-600 dark:text-red-400 mb-4 flex items-center gap-2">
               AVOID THESE TYPES
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -132,6 +133,7 @@ export function PokemonDetail() {
                       src={`/pokemon-type-chart/icons/${type}.svg`}
                       alt={type}
                       className="w-12 h-12"
+                      style={{ filter: 'drop-shadow(1px 1px 0 #000)' }}
                     />
                     <span className="text-lg md:text-xl font-bold text-white capitalize text-center" style={{ textShadow: '1px 1px 0 #000' }}>
                       {type}

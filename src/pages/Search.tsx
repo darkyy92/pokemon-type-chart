@@ -223,8 +223,8 @@ export function Search() {
                 <>
                   {/* USE THESE TYPES */}
                   {useTheseTypes.length > 0 && (
-                    <div className="bg-green-600 dark:bg-green-700 rounded-xl shadow-lg p-4 mb-4">
-                      <h3 className="text-lg font-bold text-white mb-3">USE THESE TYPES</h3>
+                    <div className="border-4 border-green-600 dark:border-green-700 rounded-xl shadow-lg p-4 mb-4" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(22,163,74,0.08) 5px, rgba(22,163,74,0.08) 6px)', backgroundColor: '#ffffff' }}>
+                      <h3 className="text-lg font-bold text-green-600 dark:text-green-400 mb-3">USE THESE TYPES</h3>
                       <div className="grid grid-cols-2 gap-2">
                         {useTheseTypes.map(({ type, multiplier }) => {
                           const textColor = multiplier === 4 ? 'text-yellow-500' : 'text-green-600';
@@ -238,6 +238,7 @@ export function Search() {
                                 src={`/pokemon-type-chart/icons/${type}.svg`}
                                 alt={type}
                                 className="w-12 h-12 flex-shrink-0"
+                                style={{ filter: 'drop-shadow(1px 1px 0 #000)' }}
                               />
                               <span className="text-base font-bold text-white capitalize flex-1" style={{ textShadow: '1px 1px 0 #000' }}>
                                 {type}
@@ -254,8 +255,8 @@ export function Search() {
 
                   {/* AVOID THESE TYPES */}
                   {avoidTheseTypes.length > 0 && (
-                    <div className="bg-red-600 dark:bg-red-700 rounded-xl shadow-lg p-4">
-                      <h3 className="text-lg font-bold text-white mb-3">AVOID THESE TYPES</h3>
+                    <div className="border-4 border-red-600 dark:border-red-700 rounded-xl shadow-lg p-4" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(220,38,38,0.08) 5px, rgba(220,38,38,0.08) 6px)', backgroundColor: '#ffffff' }}>
+                      <h3 className="text-lg font-bold text-red-600 dark:text-red-400 mb-3">AVOID THESE TYPES</h3>
                       <div className="grid grid-cols-2 gap-2">
                         {avoidTheseTypes.map(({ type, multiplier }) => {
                           const getTextColor = () => {
@@ -273,6 +274,7 @@ export function Search() {
                                 src={`/pokemon-type-chart/icons/${type}.svg`}
                                 alt={type}
                                 className="w-12 h-12 flex-shrink-0"
+                                style={{ filter: 'drop-shadow(1px 1px 0 #000)' }}
                               />
                               <span className="text-base font-bold text-white capitalize flex-1" style={{ textShadow: '1px 1px 0 #000' }}>
                                 {type}
