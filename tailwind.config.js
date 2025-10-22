@@ -28,6 +28,10 @@ export default {
         steel: '#B8B8D0',
         fairy: '#EE99AC',
       },
+      zIndex: {
+        60: '60',
+        70: '70',
+      },
     },
   },
   plugins: [],

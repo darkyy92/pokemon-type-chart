@@ -1,16 +1,14 @@
 import { useState, useEffect, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Fuse from 'fuse.js';
 import { TrainerEntry, TrainerIndex, Pokemon, PokemonType } from '../types';
 import { TrainerCard } from '../components/TrainerCard';
 import { RankBadge } from '../components/RankBadge';
 import { TypeBadge } from '../components/TypeBadge';
 import { pokemonDatabase } from '../data/pokemon';
-import { getTypeColor } from '../utils/typeCalculator';
+import { getTypeColor, calculateDefenseMatchups, groupMatchupsByCategory, getPokemonSpriteUrl } from '../utils/typeCalculator';
 import { prefetchMoveTypes } from '../utils/moveTypeHelper';
 
 export function Trainers() {
-  const navigate = useNavigate();
   const [trainersIndex, setTrainersIndex] = useState<TrainerIndex[]>([]);
   const [trainersData, setTrainersData] = useState<TrainerEntry[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,6 +16,8 @@ export function Trainers() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [moveTypes, setMoveTypes] = useState<Map<string, PokemonType | null>>(new Map());
+  const [selectedPokemonDetail, setSelectedPokemonDetail] = useState<Pokemon | null>(null);
+  const [isPokemonDrawerOpen, setIsPokemonDrawerOpen] = useState(false);
 
   // Load trainers index on mount
   useEffect(() => {
@@ -76,6 +76,18 @@ export function Trainers() {
   const closeDrawer = () => {
     setIsDrawerOpen(false);
     setTimeout(() => setSelectedTrainer(null), 300);
+  };
+
+  // Open Pokemon detail drawer
+  const openPokemonDetail = (pokemon: Pokemon) => {
+    setSelectedPokemonDetail(pokemon);
+    setIsPokemonDrawerOpen(true);
+  };
+
+  // Close Pokemon detail drawer
+  const closePokemonDrawer = () => {
+    setIsPokemonDrawerOpen(false);
+    setTimeout(() => setSelectedPokemonDetail(null), 300);
   };
 
   // Prefetch move types when trainer is selected
@@ -355,8 +367,7 @@ export function Trainers() {
                                 <button
                                   onClick={(e) => {
                                     e.stopPropagation();
-                                    navigate(`/pokemon/${pokemonData.id}`);
-                                    closeDrawer();
+                                    openPokemonDetail(pokemonData);
                                   }}
                                   className="text-xs px-2.5 py-1 rounded-md bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200 hover:bg-purple-200 dark:hover:bg-purple-800 font-medium transition-colors"
                                 >
@@ -453,6 +464,139 @@ export function Trainers() {
                 </a>
               </div>
             )}
+          </div>
+        )}
+      </div>
+
+      {/* Pokemon Detail Drawer Overlay */}
+      {isPokemonDrawerOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-60 transition-opacity"
+          onClick={closePokemonDrawer}
+        />
+      )}
+
+      {/* Pokemon Detail Drawer */}
+      <div
+        className={`fixed top-0 right-0 h-full w-full md:w-[500px] bg-white dark:bg-gray-800 shadow-2xl z-70 transform transition-transform duration-300 overflow-y-auto ${
+          isPokemonDrawerOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        {selectedPokemonDetail && (
+          <div className="p-6 pb-24">
+            {/* Close Button */}
+            <button
+              onClick={closePokemonDrawer}
+              className="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              aria-label="Close"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Pokemon Header */}
+            <div className="mb-6 pr-8">
+              <div className="flex items-start gap-4 mb-4">
+                <img
+                  src={getPokemonSpriteUrl(selectedPokemonDetail)}
+                  alt={selectedPokemonDetail.name}
+                  className="w-20 h-20 object-contain flex-shrink-0"
+                />
+                <div className="flex-1">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+                    {selectedPokemonDetail.name}
+                  </h2>
+                  <div className="flex gap-2 mt-2">
+                    {selectedPokemonDetail.types.map((type) => (
+                      <TypeBadge key={type} type={type} size="lg" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {(() => {
+              const matchups = calculateDefenseMatchups(selectedPokemonDetail.types[0], selectedPokemonDetail.types[1]);
+              const grouped = groupMatchupsByCategory(matchups);
+              const useTheseTypes = [...grouped.quadWeak, ...grouped.doubleWeak];
+              const avoidTheseTypes = [...grouped.immune, ...grouped.quadResist, ...grouped.doubleResist];
+
+              return (
+                <>
+                  {/* USE THESE TYPES */}
+                  {useTheseTypes.length > 0 && (
+                    <div className="bg-green-600 dark:bg-green-700 rounded-xl shadow-lg p-4 mb-4">
+                      <h3 className="text-lg font-bold text-white mb-3">USE THESE TYPES</h3>
+                      <div className="grid grid-cols-2 gap-2">
+                        {useTheseTypes.map(({ type, multiplier }) => {
+                          const textColor = multiplier === 4 ? 'text-yellow-500' : 'text-green-600';
+                          return (
+                            <div
+                              key={type}
+                              className="rounded-xl overflow-hidden shadow-lg p-2 flex items-center gap-2"
+                              style={{ backgroundColor: getTypeColor(type) }}
+                            >
+                              <img
+                                src={`/pokemon-type-chart/icons/${type}.svg`}
+                                alt={type}
+                                className="w-12 h-12 flex-shrink-0"
+                              />
+                              <span className="text-base font-bold text-white capitalize flex-1" style={{ textShadow: '1px 1px 0 #000' }}>
+                                {type}
+                              </span>
+                              <div className={`bg-white font-extrabold text-base px-3 py-1 rounded-full ${textColor} flex-shrink-0`}>
+                                {multiplier}×
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* AVOID THESE TYPES */}
+                  {avoidTheseTypes.length > 0 && (
+                    <div className="bg-red-600 dark:bg-red-700 rounded-xl shadow-lg p-4">
+                      <h3 className="text-lg font-bold text-white mb-3">AVOID THESE TYPES</h3>
+                      <div className="grid grid-cols-2 gap-2">
+                        {avoidTheseTypes.map(({ type, multiplier }) => {
+                          const getTextColor = () => {
+                            if (multiplier === 0) return 'text-gray-900';
+                            if (multiplier === 0.25) return 'text-red-700';
+                            return 'text-orange-500';
+                          };
+                          return (
+                            <div
+                              key={type}
+                              className="rounded-xl overflow-hidden shadow-lg p-2 flex items-center gap-2"
+                              style={{ backgroundColor: getTypeColor(type) }}
+                            >
+                              <img
+                                src={`/pokemon-type-chart/icons/${type}.svg`}
+                                alt={type}
+                                className="w-12 h-12 flex-shrink-0"
+                              />
+                              <span className="text-base font-bold text-white capitalize flex-1" style={{ textShadow: '1px 1px 0 #000' }}>
+                                {type}
+                              </span>
+                              <div className={`bg-white font-extrabold text-base px-3 py-1 rounded-full ${getTextColor()} flex-shrink-0`}>
+                                {multiplier}×
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </div>
         )}
       </div>
