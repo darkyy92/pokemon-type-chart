@@ -90,7 +90,7 @@ export function Trainers() {
     setTimeout(() => setSelectedPokemonDetail(null), 300);
   };
 
-  // Prefetch move types when trainer is selected
+  // Load move types when trainer is selected (synchronous - instant)
   useEffect(() => {
     if (!selectedTrainer) return;
 
@@ -101,11 +101,10 @@ export function Trainers() {
       }
     });
 
-    // Fetch move types in background
+    // Get move types from static database (instant, no API calls)
     if (allMoves.length > 0) {
-      prefetchMoveTypes(allMoves).then((types) => {
-        setMoveTypes(types);
-      });
+      const types = prefetchMoveTypes(allMoves);
+      setMoveTypes(types);
     }
   }, [selectedTrainer]);
 
